@@ -7,30 +7,103 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<div class="flex h-screen items-center justify-center -mt-24 ml-32">
-			<div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
-			  <button class="border-2 border-black px-5 py-2 font-bold w-32"
-				>2024-2025</button
-			  >
-			  <h1 class="text-6xl">Portfolio</h1>
-			  <p class="text-xl">
-				Lorem Ipsum is simply dummy text of the printing and</br>
-			  typesetting industry.</p>
-			  <button class="bg-black text-white px-5 py-3 w-44"
-			  >Mes réalisations</button
-			>
-			</div>
-	  
-	  
-			<div class="w-1/2">
-			  <img src="./pc.png" alt="#" />
-			</div>
-		  </div>
-		<Footer />
-	</body>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        
+    <style>
+        .slider {
+            margin: auto;
+            width: 100%;
+            height: 100vh;
+			max-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+        .slider-content {
+            display: flex;
+            width: 100%;
+			height: 100vh;
+			max-height: 100vh;
+            position: absolute;
+            animation: slider 15s infinite;
+        }
+        .slider-content > div {
+            width: 100%;
+			max-height: 100vh;
+            flex-shrink: 0;
+        }
+        @keyframes slider {
+            0% {
+                transform: translateX(0%);
+            }
+            20% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-100%);
+            }
+            45% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(-200%);
+            }
+            70% {
+                transform: translateX(-200%);
+            }
+            75% {
+                transform: translateX(-100%);
+            }
+            95% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+	<Header/>
+    <div class="slider max-h-full">
+        <div class="slider-content max-h-full">
+            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
+                <div class="w-1/2 flex flex-col gap-5 justify-center">
+                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
+                    <h1 class="text-6xl">Portfolio</h1>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
+                </div>
+                <div class="w-1/2">
+                    <img src="./pc.png" alt="#" />
+                </div>
+            </div>
+            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
+                <div class="w-1/2 flex flex-col gap-5 justify-center">
+                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
+                    <h1 class="text-6xl">Web designer</h1>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
+                </div>
+                <div class="w-1/2">
+                    <img src="./pc.png" alt="#" />
+                </div>
+            </div>
+            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
+                <div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
+                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
+                    <h1 class="text-6xl">Motion designer</h1>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
+                </div>
+                <div class="w-1/2">
+                    <img src="./pc.png" alt="#" />
+                </div>
+            </div>
+        </div>
+    </div>
+	<Footer />
+</body>
 </html>
