@@ -4,12 +4,13 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<nav class=" flex items-center justify-between">
+	<nav class=" lg:flex justify-between items-center p-6 max-h-36 z-10 hidden">
 		<p class="font-sans font-semibold">Nicolas HAUTIN</p>
-		<div class="internal-links">
+		<div class="flex gap-5 justify-center items-center font-sans font-semibold">
 			<HeaderLink href="/">Accueil</HeaderLink>
+			<HeaderLink href="/blog">A propos</HeaderLink>
 			<HeaderLink href="/blog">Portfolio</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="#">Contact</HeaderLink>
 		</div>
 		<div class="social-links">
 			<button class="bg-black text-white px-5 py-3 w-44"
@@ -23,7 +24,6 @@ import { SITE_TITLE } from '../consts';
 
 
 	nav a {
-		padding: 1em 0.5em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
