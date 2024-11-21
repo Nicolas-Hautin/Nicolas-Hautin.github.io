@@ -10,60 +10,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body>
-        
-    <style>
-        .slider {
-            margin: auto;
-            width: 100%;
-            height: 100vh;
-			max-height: 100vh;
-            overflow: hidden;
-            position: relative;
-        }
-        .slider-content {
-            display: flex;
-            width: 100%;
-			height: 100vh;
-			max-height: 100vh;
-            position: absolute;
-            animation: slider 15s infinite;
-        }
-        .slider-content > div {
-            width: 100%;
-			max-height: 100vh;
-            flex-shrink: 0;
-        }
-        @keyframes slider {
-            0% {
-                transform: translateX(0%);
-            }
-            20% {
-                transform: translateX(0%);
-            }
-            25% {
-                transform: translateX(-100%);
-            }
-            45% {
-                transform: translateX(-100%);
-            }
-            50% {
-                transform: translateX(-200%);
-            }
-            70% {
-                transform: translateX(-200%);
-            }
-            75% {
-                transform: translateX(-100%);
-            }
-            95% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-    </style>
+    <body> 
+
 </head>
 <body>
 	<Header/>
@@ -104,6 +52,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             </div>
         </div>
     </div>
+	<section class="mt-4 bg-bg -z-10 w-full relative h-screen flex flex-col items-center justify-center text-left p-5 lg:justify-normal lg:flex-row lg:gap-10 lg:px-20 lg:py-20 lg:text-center text-black">
+<h1>h1 reste la </h1> 
+	</section>
+	<section class="w-full bg-transparent bloc flex flex-col items-center justify-center z-20 text-black">
+		<h2>h2 passe dessus</h2>
+	</section>
 	<Footer />
 </body>
 </html>
