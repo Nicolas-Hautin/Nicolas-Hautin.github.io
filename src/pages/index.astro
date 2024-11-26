@@ -15,16 +15,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </head>
 <body>
 	<Header/>
-    <div class="slider max-h-full">
+    <div class="slider max-h-full ">
         <div class="slider-content max-h-full">
             <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
                 <div class="w-1/2 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
                     <h1 class="text-6xl">Portfolio</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 flex items-center justify-center">
                     <img src="./pc.png" alt="#" />
                 </div>
             </div>
@@ -32,10 +32,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                 <div class="w-1/2 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
                     <h1 class="text-6xl">Web designer</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 flex items-center justify-center">
                     <img src="./pc.png" alt="#" />
                 </div>
             </div>
@@ -43,21 +43,33 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
                 <div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
                     <h1 class="text-6xl">Motion designer</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and<br>typesetting industry.</p>
+                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 flex items-center justify-center">
                     <img src="./pc.png" alt="#" />
                 </div>
             </div>
         </div>
     </div>
-	<section class="mt-4 bg-bg -z-10 w-full relative h-screen flex flex-col items-center justify-center text-left p-5 lg:justify-normal lg:flex-row lg:gap-10 lg:px-20 lg:py-20 lg:text-center text-black">
-<h1>h1 reste la </h1> 
-	</section>
-	<section class="w-full bg-transparent bloc flex flex-col items-center justify-center z-20 text-black">
-		<h2>h2 passe dessus</h2>
-	</section>
-	<Footer />
+    <section class="bg-black text-white p-8 h-screen flex flex-col justify-center items-center">
+        <div class="flex items-start gap-5">
+            <div class="w-1/2 pl-8">
+                <h2 class="text-4xl mb-4">A propos</h2>
+                <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="w-1/2">
+                <img src="path/to/your/image.jpg" alt="Image description" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="mt-8 relative overflow-hidden h-36 w-full">
+            <div class="absolute w-full h-36 flex items-center animate-marquee whitespace-nowrap">
+                <span class="text-9xl font-bold">Nicolas HAUTIN</span>
+            </div>
+        </div>
+    </section>
+    <Footer />
+
 </body>
+
 </html>
