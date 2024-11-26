@@ -1,16 +1,24 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<nav class=" lg:flex justify-between items-center p-6 max-h-36 z-10 hidden">
-		<p class="font-sans font-semibold">Nicolas HAUTIN</p>
-		<div class="flex gap-5 justify-center items-center font-sans font-semibold">
-			<HeaderLink href="/">Accueil</HeaderLink>
-			<HeaderLink href="/blog">Portfolio</HeaderLink>
-			<HeaderLink href="#">Contact</HeaderLink>
+	<nav class=" lg:flex justify-between items-center p-6 max-h-36 z-10 hidden font-medium">
+		<p class="font-sans">Nicolas HAUTIN</p>
+		<div class="flex gap-5 justify-center items-center font-sans font-medium">
+			<HeaderLink href="/"><a href="">Accueil</a></HeaderLink>
+			<HeaderLink href="/blog"><a href="">Portfolio</a></HeaderLink>
+			<HeaderLink href="#"><a href="">Contact</a></HeaderLink>
 		</div>
+
+		<div class="container red topBotomBordersOut">
+			<a>HOME</a>
+			<a>ARTICLES</a>
+			<a>PORTFOLIO</a>
+			<a>ABOUT</a>
+			<a>CONTACT</a>
+		  </div>
+
 		<div class="social-links">
 			<button class="bg-black text-white px-5 py-3 w-44"
         >Mes réalisations</button
@@ -19,25 +27,41 @@ import { SITE_TITLE } from '../consts';
 	</nav>
 </header>
 <style>
+	.container {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
 
+.container a:before,
+.container a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000000;
+  opacity: 0;
+  transition: all 0.3s;
+}
 
+.container a:before {
+  top: 0;
+  transform: translateY(10px);
+}
 
-	nav a {
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
+.container a:after {
+  bottom: 0;
+  transform: translateY(-10px);
+}
+
+.container a:hover:before,
+.container a:hover:after {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>

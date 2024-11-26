@@ -14,7 +14,7 @@
 	height: 100vh;
 	max-height: 100vh;
 	position: absolute;
-	animation: slider 15s infinite;
+	animation: slider 30s infinite;
 }
 .slider-content > div {
 	width: 100%;
