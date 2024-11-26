@@ -1,23 +1,18 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<nav class=" lg:flex justify-between items-center p-6 max-h-36 z-10 hidden font-medium">
-		<p class="font-sans">Nicolas HAUTIN</p>
-		<div class="flex gap-5 justify-center items-center font-sans font-medium">
-			<HeaderLink href="/"><a href="">Accueil</a></HeaderLink>
-			<HeaderLink href="/blog"><a href="">Portfolio</a></HeaderLink>
-			<HeaderLink href="#"><a href="">Contact</a></HeaderLink>
+	<nav class=" lg:flex justify-between items-center py-2 px-32 max-h-36 z-10 hidden font-medium">
+		<p class="font-sans w-48">Nicolas HAUTIN</p>
+		<div class="container flex gap-5 justify-center items-center p-2">
+			<HeaderLink href="/"> Accueil</HeaderLink>
+			<HeaderLink href="/blog">Portfolio</HeaderLink>
+			<HeaderLink href="#">Contact</HeaderLink>
 		</div>
 
-		<div class="container red topBotomBordersOut">
-			<a>HOME</a>
-			<a>ARTICLES</a>
-			<a>PORTFOLIO</a>
-			<a>ABOUT</a>
-			<a>CONTACT</a>
-		  </div>
+
 
 		<div class="social-links">
 			<button class="bg-black text-white px-5 py-3 w-44"
@@ -27,11 +22,9 @@ import HeaderLink from './HeaderLink.astro';
 	</nav>
 </header>
 <style>
-	.container {
+	.container a {
   color: #000000;
   text-decoration: none;
-  font-size: 20px;
-  margin: 0 10px;
   padding: 10px;
   position: relative;
   cursor: pointer;
