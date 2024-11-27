@@ -15,58 +15,91 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </head>
 <body>
 	<Header/>
-    <div class="slider -m-72">
+    <div class="slider -m-72 ">
         <div class="slider-content max-h-full">
             <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
                 <div class="w-1/2 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-6xl">Portfolio</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1 class="text-9xl font-medium">Portfolio</h1>
+                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
                 <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc.png" alt="#" />
+                    <img src="./pc.png" alt="#" class=" w-3/4"/>
                 </div>
             </div>
             <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
                 <div class="w-1/2 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-6xl">Web designer</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
+                    <h1 class="text-9xl font-medium">Web designer</h1>
+                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
                 <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc.png" alt="#" />
+                    <img src="./pc2.png" alt="#" class=" w-3/4"/>
                 </div>
             </div>
             <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
                 <div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
                     <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-6xl">Motion designer</h1>
-                    <p class="text-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <h1 class="text-9xl font-medium">Motion designer</h1>
+                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                     <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
                 </div>
                 <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc.png" alt="#" />
+                    <img src="./pc.png" alt="#" class=" w-3/4"/>
                 </div>
             </div>
         </div>
     </div>
-    <section class="bg-black text-white px-32 h-screen flex flex-col justify-center items-center relative overflow-hidden">
+    <!-- <section class="px-32 py-16 flex flex-col justify-center items-center relative overflow-hidden">
         <div class="flex gap-5">
             <div class="w-1/2">
-                <h2 class="text-4xl">A propos</h2>
+                <h2 class="text-4xl">À propos</h2>
                 <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
             </div>
             <div class="w-1/2">
-                <img src="path/to/your/image.jpg" alt="Image description" class="w-full h-auto">
+                <img src="#" alt="Image description" class="w-full border2 border-black">
             </div>
         </div>
         <div class="h-36 w-full">
-            <div class="absolute w-full h-36 flex items-center animate-marquee whitespace-nowrap">
+            <div class="absolute w-full h-36 flex items-center animate-marquee">
                 <span class="text-9xl font-bold">Nicolas HAUTIN</span>
             </div>
         </div>
+    </section> -->
+
+     <section class="py-16 flex flex-col justify-center items-center">
+        <div class="flex">
+            <div class="flex flex-col w-1/2 ml-32 pr-12 justify-center gap-5 ">
+                <h2 class="text-4xl">À propos</h2>
+                <p class="text-lg">Bonjour et bienvenue sur mon portfolio !</br>
+                    Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné(e) par la création numérique sous toutes ses formes, je me spécialise en webdesign, production vidéo, et design UI/UX.
+                    
+                    Mon objectif est de concevoir des expériences visuelles et interactives qui allient esthétique et fonctionnalité. Que ce soit à travers la création de sites web intuitifs, de contenus vidéos percutants ou d'interfaces utilisateur réfléchies, je cherche toujours à raconter une histoire et à répondre aux besoins des utilisateurs.</p>
+            </div>
+            <div class="w-1/2 pr-32 py-96 bg-black">
+                <ul class="p-5 text-white flex flex-col gap-16">
+                    <li class="flex gap-10">
+                        <img src="/ampoule.svg" alt="#" class="w-12">
+                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class=" flex gap-10">
+                        <img src="/pinceau.svg" alt="" class="w-12" >
+                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class=" flex gap-10">
+                        <img src="/ordinateur.svg" alt="" class="w-12">
+                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                    <li class=" flex gap-10">
+                        <img src="/camera.svg" alt="" class="w-12">
+                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
     </section>
     <Footer />
 
