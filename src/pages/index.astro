@@ -1,58 +1,83 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-    <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-    </head>
-    <body> 
-
-</head>
-<body>
-	<Header/>
-    <div class="slider -m-72 ">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <body>
+      <Header />
+      <div class="slider -m-72">
         <div class="slider-content max-h-full">
-            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
-                <div class="w-1/2 flex flex-col gap-5 justify-center">
-                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-9xl font-medium">Portfolio</h1>
-                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
-                </div>
-                <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc.png" alt="#" class=" w-3/4"/>
-                </div>
+          <div
+            class="flex h-screen items-center justify-center -mt-24 px-32 w-full"
+          >
+            <div class="w-1/2 flex flex-col gap-5 justify-center">
+              <button class="border-2 border-black px-5 py-2 font-bold w-32"
+                >2024-2025</button
+              >
+              <h1 class="text-9xl font-medium">Portfolio</h1>
+              <p class="text-2xl">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <button class="bg-black text-white px-5 py-3 w-44"
+                >Mes réalisations</button
+              >
             </div>
-            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
-                <div class="w-1/2 flex flex-col gap-5 justify-center">
-                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-9xl font-medium">Web designer</h1>
-                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing andtypesetting industry.</p>
-                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
-                </div>
-                <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc2.png" alt="#" class=" w-3/4"/>
-                </div>
+            <div class="w-1/2 flex items-center justify-center">
+              <img src="./pc.png" alt="ordinateur" class="w-3/4" />
             </div>
-            <div class="flex h-screen items-center justify-center -mt-24 px-32 w-full">
-                <div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
-                    <button class="border-2 border-black px-5 py-2 font-bold w-32">2024-2025</button>
-                    <h1 class="text-9xl font-medium">Motion designer</h1>
-                    <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <button class="bg-black text-white px-5 py-3 w-44">Mes réalisations</button>
-                </div>
-                <div class="w-1/2 flex items-center justify-center">
-                    <img src="./pc.png" alt="#" class=" w-3/4"/>
-                </div>
+          </div>
+          <div
+            class="flex h-screen items-center justify-center -mt-24 px-32 w-full"
+          >
+            <div class="w-1/2 flex flex-col gap-5 justify-center">
+              <button class="border-2 border-black px-5 py-2 font-bold w-32"
+                >2024-2025</button
+              >
+              <h1 class="text-9xl font-medium">Web designer</h1>
+              <p class="text-2xl">
+                Lorem Ipsum is simply dummy text of the printing andtypesetting
+                industry.
+              </p>
+              <button class="bg-black text-white px-5 py-3 w-44"
+                >Mes réalisations</button
+              >
             </div>
+            <div class="w-1/2 flex items-center justify-center">
+              <img src="./pc2.png" alt="ordinateur2" class="w-3/4" />
+            </div>
+          </div>
+          <div
+            class="flex h-screen items-center justify-center -mt-24 px-32 w-full"
+          >
+            <div class="w-1/2 py-16 flex flex-col gap-5 justify-center">
+              <button class="border-2 border-black px-5 py-2 font-bold w-32"
+                >2024-2025</button
+              >
+              <h1 class="text-9xl font-medium">Motion designer</h1>
+              <p class="text-2xl">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <button class="bg-black text-white px-5 py-3 w-44"
+                >Mes réalisations</button
+              >
+            </div>
+            <div class="w-1/2 flex items-center justify-center">
+              <img src="./pc.png" alt="ordinateur" class="w-3/4" />
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- <section class="px-32 py-16 flex flex-col justify-center items-center relative overflow-hidden">
+      </div>
+      <!-- <section class="px-32 py-16 flex flex-col justify-center items-center relative overflow-hidden">
         <div class="flex gap-5">
             <div class="w-1/2">
                 <h2 class="text-4xl">À propos</h2>
@@ -69,40 +94,70 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         </div>
     </section> -->
 
-     <section class="py-16 flex flex-col justify-center items-center">
-        <div class="flex">
-            <div class="flex flex-col w-1/2 ml-32 pr-12 justify-center gap-5 ">
-                <h2 class="text-4xl">À propos</h2>
-                <p class="text-lg">Bonjour et bienvenue sur mon portfolio !</br>
-                    Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné(e) par la création numérique sous toutes ses formes, je me spécialise en webdesign, production vidéo, et design UI/UX.
-                    
-                    Mon objectif est de concevoir des expériences visuelles et interactives qui allient esthétique et fonctionnalité. Que ce soit à travers la création de sites web intuitifs, de contenus vidéos percutants ou d'interfaces utilisateur réfléchies, je cherche toujours à raconter une histoire et à répondre aux besoins des utilisateurs.</p>
-            </div>
-            <div class="w-1/2 pr-32 py-96 bg-black">
-                <ul class="p-5 text-white flex flex-col gap-16">
-                    <li class="flex gap-10">
-                        <img src="/ampoule.svg" alt="#" class="w-12">
-                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                    <li class=" flex gap-10">
-                        <img src="/pinceau.svg" alt="" class="w-12" >
-                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                    <li class=" flex gap-10">
-                        <img src="/ordinateur.svg" alt="" class="w-12">
-                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                    <li class=" flex gap-10">
-                        <img src="/camera.svg" alt="" class="w-12">
-                        <p class="text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    </li>
-                </ul>
-            </div>
+      <section class="py-16 flex justify-center items-center">
+        <div class="flex flex-col w-1/2 ml-32 pr-48 gap-5">
+          <div class="flex flex-col justify-center gap-5">
+            <h2 class="text-4xl">À propos</h2>
+            <p class="text-lg">Bonjour et bienvenue sur mon portfolio !</p>
+            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année
+            de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné(e) par
+            la création numérique sous toutes ses formes, je me spécialise en webdesign,
+            production vidéo, et design UI/UX. Mon objectif est de concevoir des
+            expériences visuelles et interactives qui allient esthétique et fonctionnalité.
+            Que ce soit à travers la création de sites web intuitifs, de contenus
+            vidéos percutants ou d'interfaces utilisateur réfléchies, je cherche
+            toujours à raconter une histoire et à répondre aux besoins des utilisateurs.
+          </div>
+          <button class="bg-black text-white px-5 py-3 font-bold w-72"
+            >Découvrir mes réalisations</button
+          >
         </div>
-        
-    </section>
+        <div class="w-1/2 px-32 py-80 bg-black">
+          <ul class="p-5 text-white flex flex-col gap-16">
+            <li class="flex gap-10">
+              <img src="/ordinateur.svg " alt="ampoule" class="w-12" />
+              <div>
+                <h3 class="text-2xl font-semibold">Webdesign</h3>
+                <p class="text-xl">
+                  Je conçois des designs modernes et attrayants pour le web, en
+                  mettant l'accent sur l'ergonomie et l'esthétique.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-10">
+              <img src="/camera.svg " alt="pinceau" class="w-12" />
+              <div>
+                <h3 class="text-2xl font-semibold">Production vidéo</h3>
+
+                <p class="text-xl">
+                  Je crée et monte des vidéos captivantes qui racontent des
+                  histoires et mettent en valeur votre message.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-10">
+              <img src="/pinceau.svg " alt="" class="w-12" />
+              <div>
+                <h3 class="text-2xl font-semibold">UI/UX Design</h3>
+                <p class="text-xl">
+                  Je conçois des interfaces intuitives et centrées sur
+                  l'utilisateur, pour des expériences fluides et engageantes.
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-10">
+              <img src="/ampoule.svg" alt="" class="w-12" />
+              <div>
+                <h3 class="text-2xl font-semibold">Créativité</h3>
+                <p class="text-xl">
+                  J'aime transformer les idées en projets concrets et uniques.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </body>
     <Footer />
-
-</body>
-
+  </body>
 </html>
