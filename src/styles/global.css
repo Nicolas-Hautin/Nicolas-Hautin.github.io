@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Copperplate Gothic";
+  src: url("/font/copperplategothic-light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .font-helvetica {
   font-family: "Helvetica Neue", sans-serif;
 }
@@ -84,6 +91,7 @@
 .number3,
 .number4 {
   counter-reset: num var(--num);
+  font-family: copperplate gothic;
 }
 
 .number1::after,
@@ -94,7 +102,7 @@
 }
 
 .animate-counter-number1 {
-  animation: counter-number1 5s ease-in-out forwards;
+  animation: counter-number1 2s ease-in-out forwards;
 }
 
 .animate-counter-number2 {
@@ -132,7 +140,7 @@
     --num: 0;
   }
   to {
-    --num: 150;
+    --num: 100;
   }
 }
 
@@ -141,6 +149,6 @@
     --num: 0;
   }
   to {
-    --num: 50;
+    --num: 15;
   }
 }

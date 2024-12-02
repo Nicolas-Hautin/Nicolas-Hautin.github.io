@@ -5,6 +5,7 @@ export default {
 		extend: {
 			fontFamily: {
                 copperplate: ['Copperplate Gothic', 'sans-serif'],
+				copperplatelight: ['Copperplate Gothic Light', 'sans-serif'],
             },
 		},
 	},
