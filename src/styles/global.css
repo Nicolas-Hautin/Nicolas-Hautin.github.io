@@ -1,54 +1,65 @@
+@font-face {
+  font-family: "Copperplate Gothic";
+  src: url("/font/copperplategothic_bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-helvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 /*Slider Home page*/
 
 .slider {
-	margin: auto;
-	width: 100%;
-	height: 100vh;
-	max-height: 100vh;
-	overflow: hidden;
-	position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 .slider-content {
-	display: flex;
-	width: 100%;
-	height: 100vh;
-	max-height: 100vh;
-	position: absolute;
-	animation: slider 30s infinite;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  position: absolute;
+  animation: slider 30s infinite;
 }
 .slider-content > div {
-	width: 100%;
-	max-height: 100vh;
-	flex-shrink: 0;
+  width: 100%;
+  max-height: 100vh;
+  flex-shrink: 0;
 }
 @keyframes slider {
-	0% {
-		transform: translateX(0%);
-	}
-	20% {
-		transform: translateX(0%);
-	}
-	25% {
-		transform: translateX(-100%);
-	}
-	45% {
-		transform: translateX(-100%);
-	}
-	50% {
-		transform: translateX(-200%);
-	}
-	70% {
-		transform: translateX(-200%);
-	}
-	75% {
-		transform: translateX(-100%);
-	}
-	95% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  95% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 /*A propos*/
@@ -61,3 +72,75 @@
 .animate-marquee {
 	animation: marquee 10s linear infinite;
 } */
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+.number1,
+.number2,
+.number3,
+.number4 {
+  counter-reset: num var(--num);
+}
+
+.number1::after,
+.number2::after,
+.number3::after,
+.number4::after {
+  content: counter(num);
+}
+
+.animate-counter-number1 {
+  animation: counter-number1 5s ease-in-out forwards;
+}
+
+.animate-counter-number2 {
+  animation: counter-number2 5s ease-in-out forwards;
+}
+
+.animate-counter-number3 {
+  animation: counter-number3 5s ease-in-out forwards;
+}
+
+.animate-counter-number4 {
+  animation: counter-number4 5s ease-in-out forwards;
+}
+
+@keyframes counter-number1 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 3;
+  }
+}
+
+@keyframes counter-number2 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 25;
+  }
+}
+
+@keyframes counter-number3 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 150;
+  }
+}
+
+@keyframes counter-number4 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 50;
+  }
+}
