@@ -1,17 +1,15 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+).slice(0,3);
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
+<BaseLayout>
+
     <div class="slider -m-72">
       <div class="slider-content max-h-full">
         <div
@@ -28,7 +26,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             >
           </div>
         </div>
-
         <div
           class="flex flex-col lg:flex-row h-screen items-center justify-center lg:-mt-24 p-5 lg:px-32 w-full gap-16 lg:gap-0"
         >
@@ -54,13 +51,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
             />
           </div>
         </div>
-
         <div
           class="flex flex-col lg:flex-row h-screen items-center justify-center lg:-mt-24 p-5 lg:px-32 w-full gap-16 lg:gap-0"
         >
-          <div
-            class="lg:w-1/2 flex flex-col gap-5 justify-center items-center lg:items-start"
-          >
+          <div class="lg:w-1/2 flex flex-col gap-5 justify-center items-center lg:items-start">
             <button class="border-2 border-black px-5 py-2 font-bold w-32"
               >2024-2025</button
             >
@@ -69,16 +63,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
               Avec une passion pour l'animation, je donne vie aux concepts visuels grâce aux outils de motion design
             </p>
             <button class="bg-black text-white px-5 py-3 w-44"
-              >Mes réalisations</button
-            >
+              >Mes réalisations</button>
           </div>
           <div class="w-1/2 flex items-center justify-center">
-            <img
-              src="./pc3.png"
-              alt="ordinateur"
-              class="w-3/4"
-              
-            />
+            <img src="./pc3.png" alt="ordinateur" class="w-3/4"/>
           </div>
         </div>
         <div
@@ -94,35 +82,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           >Mes réalisations</button
         >
         </div>
-
       </div> 
       </div>
     </div>
-    <!-- <section class="px-32 py-16 flex flex-col justify-center items-center relative overflow-hidden">
-        <div class="flex gap-5">
-            <div class="w-1/2">
-                <h2 class="text-4xl">À propos</h2>
-                <p class="text-lg">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-            <div class="w-1/2">
-                <img src="#" alt="Image description" class="w-full border2 border-black">
-            </div>
-        </div>
-        <div class="h-36 w-full">
-            <div class="absolute w-full h-36 flex items-center animate-marquee">
-                <span class="text-9xl font-bold">Nicolas HAUTIN</span>
-            </div>
-        </div>
-    </section> -->
-
     <section
-      class="flex flex-col lg:flex-row justify-center items-center gap-5"
-    >
+      class="flex flex-col lg:flex-row justify-center items-center gap-5">
       <div class="p-10 flex flex-col lg:flex lg:w-1/2 lg:ml-32 lg:pr-48 gap-5">
         <div class="flex flex-col justify-center gap-5">
           <h2 class="text-4xl">À propos</h2>
-          <p class="text-lg">Bonjour et bienvenue sur mon portfolio !</p>
-          <p class="font-helvetica">
+          <p class="text-xl">Bonjour et bienvenue sur mon portfolio !</p>
+          <p class="font-helvetica text-xl">
             Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième
             année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné
             par la création numérique sous toutes ses formes, je me spécialise
@@ -138,7 +107,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
           >Découvrir mes réalisations</button
         >
       </div>
-      <div class="lg:w-1/2 lg:px-32 lg:py-60 bg-black">
+      <div class="lg:w-1/2 lg:p-32 bg-black">
         <ul class="p-10 lg:p-5 text-white flex flex-col gap-16">
           <li class="flex gap-10">
             <img
@@ -212,7 +181,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <li class="flex flex-col gap-2">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number1 flex flex-col-reverse text-5xl"></p>
-            <h4 class="font-copperplate">ans</h4>
+            <span class="font-copperplate">ans</span>
           </div>
           <p class="flex justify-center uppercase font-copperplatelight">
             d'expérience
@@ -221,7 +190,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <li class="flex flex-col gap-2">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number2 flex flex-col-reverse text-5xl"></p>
-            <h4 class="font-copperplate">+</h4>
+            <span class="font-copperplate">+</span>
           </div>
           <p class="flex justify-center uppercase font-copperplatelight">
             Projets réalisés
@@ -231,7 +200,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <li class="flex flex-col gap-2">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number3 flex flex-col-reverse text-5xl"></p>
-            <h4 class="font-copperplate">h</h4>
+            <span class="font-copperplate">h</span>
           </div>
           <p class="flex justify-center uppercase font-copperplatelight">
             Production vidéo
@@ -240,7 +209,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         <li class="flex flex-col gap-2">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number4 flex flex-col-reverse text-5xl"></p>
-            <h4 class="font-copperplate">+</h4>
+            <span class="font-copperplate">+</span>
           </div>
           <p class="flex justify-center uppercase font-copperplatelight">
             Sites internet
@@ -248,33 +217,102 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </li>
       </ul>
     </section>
+    <!-- <section class="mx-32">
+      <h2 class="text-xl lg:text-2xl font-semibold text-center">Mes projets</h2>
+      <ul class="flex flex-col">
+        <li class="flex gap-20">
+          <img src="/MapleLounge.png" alt="MapleLounge" class="w-1/2 m-5" />
+          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
+            <h3 class="text-5xl font-bold">Maple Lounge</h3>
+            <p class="">
+              Création d'une identité visuelle unique pour un bar à thème,
+              alliant design de logo, charte graphique et ambiance visuelle
+              immersive.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-20" >
+          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
+            <h3 class="text-5xl font-bold">Coachella</h3>
+            <p class="">
+              Création d'une identité visuelle unique pour un bar à thème,
+              alliant design de logo, charte graphique et ambiance visuelle
+              immersive.
+            </p>
+          </div><img src="/Coachella.png" alt="Coachella" class="w-1/2 m-5"/>
+        </li>
+        <li class="flex gap-20">
+          <img src="/Splashy.png" alt="Splashy" class="w-1/2 m-5"/>
+          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
+            <h3 class="text-5xl font-bold">Splashy</h3>
+            <p class="">
+              Création d'une identité visuelle unique pour un bar à thème,
+              alliant design de logo, charte graphique et ambiance visuelle
+              immersive.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-20">
+          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
+            <h3 class="text-5xl font-bold">Cp company</h3>
+            <p class="">
+              Création d'une identité visuelle unique pour un bar à thème,
+              alliant design de logo, charte graphique et ambiance visuelle
+              immersive.
+            </p>
+          </div>
+          <img src="/CPCompany.png" alt="CpCompany" class="w-1/2 m-5"/>
+          
+        </li>
+      </ul>
+    </section> -->
+    <section class="mx-32">
+      <h2 class="text-xl lg:text-2xl font-semibold text-center">Derniers articles</h2>
+      <ul class="flex flex-col gap-10">
+        {
+          posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.slug}/`} class="flex gap-20">
+                <img src={post.data.heroImage} alt="image" class="w-1/4 m-5"/>
+                <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
+                <h3 class="text-5xl font-bold">{post.data.title}</h3>
+                <p class="text-xl">{post.data.description}</p>
+              </div>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
 
-    <Footer />
-  </body><script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            if (entry.target.classList.contains("number1")) {
-              entry.target.classList.add("animate-counter-number1");
-            } else if (entry.target.classList.contains("number2")) {
-              entry.target.classList.add("animate-counter-number2");
-            } else if (entry.target.classList.contains("number3")) {
-              entry.target.classList.add("animate-counter-number3");
-            } else if (entry.target.classList.contains("number4")) {
-              entry.target.classList.add("animate-counter-number4");
-            }
-            observer.unobserve(entry.target); // Stop observing after animation starts
+
+</BaseLayout>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (entry.target.classList.contains("number1")) {
+            entry.target.classList.add("animate-counter-number1");
+          } else if (entry.target.classList.contains("number2")) {
+            entry.target.classList.add("animate-counter-number2");
+          } else if (entry.target.classList.contains("number3")) {
+            entry.target.classList.add("animate-counter-number3");
+          } else if (entry.target.classList.contains("number4")) {
+            entry.target.classList.add("animate-counter-number4");
           }
-        });
-      });
-
-      const targets = document.querySelectorAll(
-        ".number1, .number2, .number3, .number4"
-      );
-      targets.forEach((target) => {
-        observer.observe(target);
+          observer.unobserve(entry.target);
+        }
       });
     });
-  </script>
-</html>
+
+    const targets = document.querySelectorAll(
+      ".number1, .number2, .number3, .number4"
+    );
+    targets.forEach((target) => {
+      observer.observe(target);
+    });
+  });
+</script>

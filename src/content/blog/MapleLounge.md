@@ -1,8 +1,8 @@
 ---
-title: 'Markdown Style Guide'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
+title: 'Maple Lounge'
+description: 'Création d’une identité visuelle unique pour un bar à thème, alliant design de logo, charte graphique et ambiance visuelle immersive.'
 pubDate: 'Jun 19 2024'
-heroImage: '/blog-placeholder-1.jpg'
+heroImage: '/MapleLounge.png'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
@@ -33,13 +33,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 ### Syntax
 
-```markdown
-![Alt text](./full/or/relative/path/of/image)
-```
 
-### Output
-
-![blog placeholder](/blog-placeholder-about.jpg)
 
 ## Blockquotes
 
@@ -73,11 +67,7 @@ The blockquote element represents content that is quoted from another source, op
 > Don't communicate by sharing memory, share memory by communicating.<br>
 > — <cite>Rob Pike[^1]</cite>
 
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
-## Tables
-
-### Syntax
 
 ```markdown
 | Italics   | Bold     | Code   |
