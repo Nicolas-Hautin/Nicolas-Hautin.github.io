@@ -32,7 +32,7 @@
   height: 100vh;
   max-height: 100vh;
   position: absolute;
-  animation: slider 30s infinite;
+  animation: slider 15s;
 }
 .slider-content > div {
   width: 100%;
@@ -59,13 +59,10 @@
     transform: translateX(-200%);
   }
   75% {
-    transform: translateX(-100%);
-  }
-  95% {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
   100% {
-    transform: translateX(0%);
+    transform: translateX(-300%);
   }
 }
 
