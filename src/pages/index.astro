@@ -235,7 +235,25 @@ const posts = (await getCollection('blog')).sort(
       </ul>
     </section>
 
-
+    <section class="flex flex-col lg:flex-row">
+      <div class="flex flex-col lg:ml-32 items-center justify-center text-center p-44 gap-5">
+        <div class="flex flex-col justify-center gap-5">
+          <h2 class="text-4xl font-copperplate font-bold">Contactez-moi</h2>
+          <p class="text-sm lg:text-lg font-montserrat">
+            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième
+            année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné
+            par la création numérique sous toutes ses formes, je me spécialise
+            en webdesign, production vidéo, et design UI/UX. Mon objectif est de
+            concevoir des expériences visuelles et interactives qui allient
+            esthétique et fonctionnalité.
+          </p>
+        </div>
+        <button class="bg-black text-white px-5 py-3 font-bold w-1/6"
+          >Contact</button
+        >
+      </div>
+      
+    </section>
 </BaseLayout>
 
 
