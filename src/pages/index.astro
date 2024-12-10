@@ -5,7 +5,7 @@ import FormattedDate from '../components/FormattedDate.astro';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-).slice(0,3);
+).slice(0,4);
 ---
 
 <BaseLayout>
@@ -36,14 +36,14 @@ const posts = (await getCollection('blog')).sort(
               >2024-2025</button
             >
             <h1 class="text-2xl lg:text-8xl font-medium">Web designer</h1>
-            <p class="text-sm lg:text-xl text-center">
+            <p class="text-sm lg:text-xl text-center lg:text-left">
               J"imagine et conçois des interfaces élégantes et intuitives pour offrir une expérience utilisateur optimale.
             </p>
             <button class="bg-black text-white px-5 py-3 w-44"
               >Mes réalisations</button
             >
           </div>
-          <div class="lg: w-1/2 flex lg:items-center justify-center">
+          <div class="lg: w-1/2 hidden lg:flex lg:items-center justify-center">
             <img
               src="./pc2.webp"
               alt="ordinateur2"
@@ -59,7 +59,7 @@ const posts = (await getCollection('blog')).sort(
               >2024-2025</button
             >
             <h1 class="text-2xl lg:text-8xl font-medium">Motion designer</h1>
-            <p class="text-sm lg:text-xl text-center">
+            <p class="text-sm lg:text-xl text-center lg:text-left">
               Avec une passion pour l'animation, je donne vie aux concepts visuels grâce aux outils de motion design
             </p>
             <button class="bg-black text-white px-5 py-3 w-44"
@@ -86,28 +86,25 @@ const posts = (await getCollection('blog')).sort(
       </div>
     </div>
     <section
-      class="flex flex-col lg:flex-row justify-center items-center gap-5">
-      <div class="p-10 flex flex-col lg:flex lg:w-1/2 lg:ml-32 lg:pr-48 gap-5">
+      class="flex flex-col lg:flex-row gap-5">
+      <div class="p-10 flex flex-col justify-center items-center lg:flex lg:w-1/2 lg:ml-32 lg:pr-48 gap-5">
         <div class="flex flex-col justify-center gap-5">
-          <h2 class="text-4xl">À propos</h2>
-          <p class="text-xl">Bonjour et bienvenue sur mon portfolio !</p>
-          <p class="font-helvetica text-xl">
+          <h2 class="text-4xl font-copperplate font-bold">À propos</h2>
+          <p class="text-lg font-montserrat">Bonjour et bienvenue sur mon portfolio !</p>
+          <p class="text-lg font-montserrat">
             Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième
             année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné
             par la création numérique sous toutes ses formes, je me spécialise
             en webdesign, production vidéo, et design UI/UX. Mon objectif est de
             concevoir des expériences visuelles et interactives qui allient
-            esthétique et fonctionnalité. Que ce soit à travers la création de
-            sites web intuitifs, de contenus vidéos percutants ou d'interfaces
-            utilisateur réfléchies, je cherche toujours à raconter une histoire
-            et à répondre aux besoins des utilisateurs.
+            esthétique et fonctionnalité.
           </p>
         </div>
         <button class="bg-black text-white px-5 py-3 font-bold w-72"
           >Découvrir mes réalisations</button
         >
       </div>
-      <div class="lg:w-1/2 lg:p-32 bg-black">
+      <div class="lg:w-1/2 lg:p-32 bg-black flex justify-start">
         <ul class="p-10 lg:p-5 text-white flex flex-col gap-16">
           <li class="flex gap-10">
             <img
@@ -117,8 +114,8 @@ const posts = (await getCollection('blog')).sort(
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-2xl font-semibold">Webdesign</h3>
-              <p class="text-lg lg:text-xl">
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">Webdesign</h3>
+              <p class="text-sm lg:text-lg font-montserrat">
                 Je conçois des designs modernes et attrayants pour le web, en
                 mettant l'accent sur l'ergonomie et l'esthétique.
               </p>
@@ -132,11 +129,11 @@ const posts = (await getCollection('blog')).sort(
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-2xl font-semibold">
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
                 Production vidéo
               </h3>
 
-              <p class="text-lg lg:text-xl">
+              <p class="text-sm lg:text-lg font-montserrat">
                 Je crée et monte des vidéos captivantes qui racontent des
                 histoires et mettent en valeur votre message.
               </p>
@@ -150,8 +147,8 @@ const posts = (await getCollection('blog')).sort(
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-2xl font-semibold">UI/UX Design</h3>
-              <p class="text-lg lg:text-xl">
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">UI/UX Design</h3>
+              <p class="text-sm lg:text-lg font-montserrat">
                 Je conçois des interfaces intuitives et centrées sur
                 l'utilisateur, pour des expériences fluides et engageantes.
               </p>
@@ -161,12 +158,12 @@ const posts = (await getCollection('blog')).sort(
             <img
               src="/ampoule.svg"
               alt=""
-              class="lg:w-16 w-10"
+              class="lg:w-12 w-10"
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-2xl font-semibold">Créativité</h3>
-              <p class="text-lg lg:text-xl">
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">Créativité</h3>
+              <p class="text-lg  font-montserrat">
                 J'aime transformer les idées en projets concrets et uniques.
               </p>
             </div>
@@ -217,67 +214,19 @@ const posts = (await getCollection('blog')).sort(
         </li>
       </ul>
     </section>
-    <!-- <section class="mx-32">
-      <h2 class="text-xl lg:text-2xl font-semibold text-center">Mes projets</h2>
-      <ul class="flex flex-col">
-        <li class="flex gap-20">
-          <img src="/MapleLounge.png" alt="MapleLounge" class="w-1/2 m-5" />
-          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
-            <h3 class="text-5xl font-bold">Maple Lounge</h3>
-            <p class="">
-              Création d'une identité visuelle unique pour un bar à thème,
-              alliant design de logo, charte graphique et ambiance visuelle
-              immersive.
-            </p>
-          </div>
-        </li>
-        <li class="flex gap-20" >
-          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
-            <h3 class="text-5xl font-bold">Coachella</h3>
-            <p class="">
-              Création d'une identité visuelle unique pour un bar à thème,
-              alliant design de logo, charte graphique et ambiance visuelle
-              immersive.
-            </p>
-          </div><img src="/Coachella.png" alt="Coachella" class="w-1/2 m-5"/>
-        </li>
-        <li class="flex gap-20">
-          <img src="/Splashy.png" alt="Splashy" class="w-1/2 m-5"/>
-          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
-            <h3 class="text-5xl font-bold">Splashy</h3>
-            <p class="">
-              Création d'une identité visuelle unique pour un bar à thème,
-              alliant design de logo, charte graphique et ambiance visuelle
-              immersive.
-            </p>
-          </div>
-        </li>
-        <li class="flex gap-20">
-          <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
-            <h3 class="text-5xl font-bold">Cp company</h3>
-            <p class="">
-              Création d'une identité visuelle unique pour un bar à thème,
-              alliant design de logo, charte graphique et ambiance visuelle
-              immersive.
-            </p>
-          </div>
-          <img src="/CPCompany.png" alt="CpCompany" class="w-1/2 m-5"/>
-          
-        </li>
-      </ul>
-    </section> -->
-    <section class="mx-32">
-      <h2 class="text-xl lg:text-2xl font-semibold text-center">Derniers articles</h2>
-      <ul class="flex flex-col gap-10">
+
+    <section class="flex flex-col mx-32 gap-20 ">
+      <h2 class="text-4xl font-copperplate font-bold text-center">Mes réalisations</h2>
+      <ul class="flex flex-col gap-14">
         {
-          posts.map((post) => (
+          posts.map((post, index) => (
             <li>
-              <a href={`/blog/${post.slug}/`} class="flex gap-20">
-                <img src={post.data.heroImage} alt="image" class="w-1/4 m-5"/>
-                <div class="flex flex-col justify-end m-5 w-1/2 gap-5">
-                <h3 class="text-5xl font-bold">{post.data.title}</h3>
-                <p class="text-xl">{post.data.description}</p>
-              </div>
+              <a href={`/blog/${post.slug}/`} class={`flex flex-col lg:flex-row justify-between gap-40  ${index % 2 === 0 ? '' : 'flex-row-reverse'}`}>
+                <img src={post.data.heroImage} alt="image" class="w-1/2 -m-[2px]"/>
+                <div class="flex flex-col justify-end w-1/2 gap-2">
+                  <h3 class="text-4xl font-bold font-copperplate">{post.data.title}</h3>
+                  <p class="text-lg font-montserrat">{post.data.description}</p>
+                </div>
               </a>
             </li>
           ))

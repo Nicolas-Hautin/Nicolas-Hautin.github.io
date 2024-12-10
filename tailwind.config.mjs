@@ -6,6 +6,7 @@ export default {
 			fontFamily: {
                 copperplate: ['Copperplate Gothic', 'sans-serif'],
 				copperplatelight: ['Copperplate Gothic Light', 'sans-serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
             },
 		},
 	},
