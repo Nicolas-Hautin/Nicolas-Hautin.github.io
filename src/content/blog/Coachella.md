@@ -1,6 +1,6 @@
 ---
 title: 'Coachella'
-description: 'Création d’une identité visuelle unique pour un bar à thème, alliant design de logo, charte graphique et ambiance visuelle immersive.'
+description: 'Création d’une identité visuelle unique pour un bar à thème'
 pubDate: 'Jul 08 2024'
 heroImage: '/Coachella.png'
 

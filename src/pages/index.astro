@@ -21,9 +21,8 @@ const posts = (await getCollection('blog')).sort(
               Bienvenue dans l'univers créatif de Nicolas HAUTIN !</br>Découvrez mes
               projets et compétences issus de ma formation MMI.
             </p>
-            <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
-            >Mes réalisations</button
-          >
+            <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
+            href="/blog" >Mes réalisations</a>
           </div>
         </div>
         <div
@@ -79,9 +78,8 @@ const posts = (await getCollection('blog')).sort(
             Bienvenue dans l'univers créatif de Nicolas HAUTIN ! </br>Découvrez mes
             projets et compétences issus de ma formation MMI.
           </p>
-          <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
-          >Mes réalisations</button
-        >
+          <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
+         href="/blog" >Mes réalisations</a>
         </div>
       </div> 
       </div>
@@ -234,23 +232,30 @@ const posts = (await getCollection('blog')).sort(
       <h2 class="text-4xl font-copperplate font-bold text-center text-black">
         Mes réalisations
       </h2>
-      <ul class="flex flex-col gap-14">
-        {
-          posts.map((post, index) => (
-            <li>
-              <div  class={`flex flex-col lg:flex-row gap-40  ${index % 2 === 0 ? '' : 'flex-row-reverse lg:flex-row-reverse'}`}>
-                <img src={post.data.heroImage} alt="image" class="w-1/2 -m-[2px]"/>
-                <div class="flex flex-col justify-end w-1/2 gap-2">
-                  <h3 class="text-4xl font-bold font-copperplate">{post.data.title}</h3>
-                  <p class="text-sm font-montserrat">{post.data.description}</p>
-                  <a href={`/blog/${post.slug}/`} class="bg-black border-2 border-black text-white px-5 py-3 w-1/4 text-center hover:bg-white hover:text-black hover:border-2">Voir le projet</a>
-                </div>
-              </div>
-            </li>
-          ))
-        }
 
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        {
+        posts.map((post, index) => (
+          <li key={post.slug} class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 justify-between">
+          <a href={`/blog/${post.slug}/`} class="flex flex-col">
+            <img
+            width={720}
+            height={360}
+            src={post.data.heroImage}
+            alt={post.data.title}
+            class="w-full h-48 object-cover transition-transform hover:scale-105"
+            />
+            <div class="p-8 flex flex-col justify-between gap-2">
+            <h4 class="text-2xl font-bold mb-2 text-gray-800">{post.data.title}</h4>
+            <p class="text-gray-600">{post.data.description}</p>
+            <button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">Voir le projet</button>
+            </div>
+          </a>
+          </li>
+        ))
+        }
       </ul>
+      <a href=""></a>
     </section>
    
     

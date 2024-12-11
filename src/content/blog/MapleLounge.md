@@ -1,6 +1,6 @@
 ---
 title: 'Maple Lounge'
-description: 'Création d’une identité visuelle unique pour un bar à thème, alliant design de logo, charte graphique et ambiance visuelle immersive.'
+description: 'Création d’une identité visuelle unique pour un bar à thème.'
 pubDate: 'Jun 19 2024'
 heroImage: '/MapleLounge.png'
 ---
