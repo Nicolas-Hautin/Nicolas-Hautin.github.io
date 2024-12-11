@@ -8,6 +8,9 @@ export default {
 				copperplatelight: ['Copperplate Gothic Light', 'sans-serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
             },
+			maxWidth: {
+				'calc-100-minus-2em': 'calc(100% - 2em)',
+			},
 		},
 	},
 	plugins: [],

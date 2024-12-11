@@ -21,9 +21,9 @@ const posts = (await getCollection('blog')).sort(
               Bienvenue dans l'univers créatif de Nicolas HAUTIN !</br>Découvrez mes
               projets et compétences issus de ma formation MMI.
             </p>
-            <button class="bg-black text-white px-5 py-3 w-44"
-              >Mes réalisations</button
-            >
+            <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
+            >Mes réalisations</button
+          >
           </div>
         </div>
         <div
@@ -39,9 +39,9 @@ const posts = (await getCollection('blog')).sort(
             <p class="text-sm lg:text-xl text-center lg:text-left">
               J"imagine et conçois des interfaces élégantes et intuitives pour offrir une expérience utilisateur optimale.
             </p>
-            <button class="bg-black text-white px-5 py-3 w-44"
-              >Mes réalisations</button
-            >
+            <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
+          >Mes réalisations</button
+        >
           </div>
           <div class="lg: w-1/2 hidden lg:flex lg:items-center justify-center">
             <img
@@ -62,8 +62,9 @@ const posts = (await getCollection('blog')).sort(
             <p class="text-sm lg:text-xl text-center lg:text-left">
               Avec une passion pour l'animation, je donne vie aux concepts visuels grâce aux outils de motion design
             </p>
-            <button class="bg-black text-white px-5 py-3 w-44"
-              >Mes réalisations</button>
+            <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
+          >Mes réalisations</button
+        >
           </div>
           <div class="w-1/2 flex items-center justify-center">
             <img src="./pc3.png" alt="ordinateur" class="w-3/4"/>
@@ -78,92 +79,106 @@ const posts = (await getCollection('blog')).sort(
             Bienvenue dans l'univers créatif de Nicolas HAUTIN ! </br>Découvrez mes
             projets et compétences issus de ma formation MMI.
           </p>
-          <button class="bg-black border-2 text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-black hover:border-2"
+          <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
           >Mes réalisations</button
         >
         </div>
       </div> 
       </div>
     </div>
-    <section
-      class="flex flex-col lg:flex-row gap-5">
-      <div class="p-10 flex flex-col justify-center items-center lg:flex lg:w-1/2 lg:ml-32 lg:pr-48 gap-5">
+
+    <section id="propos" class="flex flex-col lg:flex-row gap-5 items-center">
+      <div
+        class="p-10 flex flex-col justify-center lg:w-1/2 lg:p-0 lg:ml-32 lg:pr-48 gap-5"
+      >
         <div class="flex flex-col justify-center gap-5">
-          <h2 class="text-4xl font-copperplate font-bold">À propos</h2>
-          <p class="text-lg font-montserrat">Bonjour et bienvenue sur mon portfolio !</p>
-          <p class="text-sm lg:text-lg font-montserrat">
-            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième
-            année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné
-            par la création numérique sous toutes ses formes, je me spécialise
-            en webdesign, production vidéo, et design UI/UX. Mon objectif est de
+          <h2
+            class="text-4xl font-copperplate font-bold text-black animate-fade-in"
+          >
+            À propos
+          </h2>
+          <p class="text-lg font-montserrat text-gray-600 animate-fade-in-delay">
+            Bonjour et bienvenue sur mon portfolio !
+          </p>
+          <p
+            class="text-sm lg:text-lg font-montserrat text-gray-600 animate-fade-in-delay"
+          >
+            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année
+            de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné par la
+            création numérique sous toutes ses formes, je me spécialise en
+            webdesign, production vidéo, et design UI/UX. Mon objectif est de
             concevoir des expériences visuelles et interactives qui allient
             esthétique et fonctionnalité.
           </p>
         </div>
-        <button class="bg-black text-white px-5 py-3 font-bold w-72"
-          >Découvrir mes réalisations</button
-        >
+        <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
+          >Mes réalisations</button>
       </div>
-      <div class="lg:w-1/2 lg:p-32 bg-black flex justify-start">
+      <div class="lg:w-1/2 lg:px-32 bg-black flex justify-center items-center h-screen">
         <ul class="p-10 lg:p-5 text-white flex flex-col gap-16">
-          <li class="flex gap-10">
+          <li class="flex gap-10 animate-fade-in">
             <img
-              src="/ordinateur.svg "
+              src="/ordinateur.svg"
               alt="ampoule"
-              class="lg:w-16 w-10"
+              class="lg:w-16 w-10 rounded-lg shadow-lg"
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">Webdesign</h3>
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+                Webdesign
+              </h3>
               <p class="text-sm lg:text-lg font-montserrat">
                 Je conçois des designs modernes et attrayants pour le web, en
                 mettant l'accent sur l'ergonomie et l'esthétique.
               </p>
             </div>
           </li>
-          <li class="flex gap-10">
+          <li class="flex gap-10 animate-fade-in">
             <img
-              src="/camera.svg "
+              src="/camera.svg"
               alt="pinceau"
-              class="lg:w-16 w-10"
+              class="lg:w-16 w-10 rounded-lg shadow-lg"
               loading="lazy"
             />
             <div>
               <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
                 Production vidéo
               </h3>
-
               <p class="text-sm lg:text-lg font-montserrat">
-                Je crée et monte des vidéos captivantes qui racontent des
-                histoires et mettent en valeur votre message.
+                Je crée et monte des vidéos captivantes qui racontent des histoires
+                et mettent en valeur votre message.
               </p>
             </div>
           </li>
-          <li class="flex gap-10">
+          <li class="flex gap-10 animate-fade-in">
             <img
-              src="/pinceau.svg "
+              src="/pinceau.svg"
               alt=""
-              class="lg:w-16 w-10"
+              class="lg:w-16 w-10 rounded-lg shadow-lg"
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">UI/UX Design</h3>
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+                UI/UX Design
+              </h3>
               <p class="text-sm lg:text-lg font-montserrat">
-                Je conçois des interfaces intuitives et centrées sur
-                l'utilisateur, pour des expériences fluides et engageantes.
+                Je conçois des interfaces intuitives et centrées sur l'utilisateur,
+                pour des expériences fluides et engageantes.
               </p>
             </div>
           </li>
-          <li class="flex gap-10">
+          <li class="flex gap-10 animate-fade-in">
             <img
               src="/ampoule.svg"
               alt=""
-              class="lg:w-12 w-10"
+              class="lg:w-12 w-10 rounded-lg shadow-lg"
               loading="lazy"
             />
             <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">Créativité</h3>
-              <p class="text-lg  font-montserrat">
+              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+                Créativité
+              </h3>
+              <p class="text-lg font-montserrat">
                 J'aime transformer les idées en projets concrets et uniques.
               </p>
             </div>
@@ -171,11 +186,12 @@ const posts = (await getCollection('blog')).sort(
         </ul>
       </div>
     </section>
+    
     <section
-      class="flex flex-col lg:flex-row items-center justify-center py-40"
+      class="flex flex-col lg:flex-row items-center justify-center py-40 bg-white"
     >
       <ul class="flex flex-col lg:flex-row gap-20">
-        <li class="flex flex-col gap-2">
+        <li class="flex flex-col gap-2 animate-fade-in">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number1 flex flex-col-reverse text-5xl"></p>
             <span class="font-copperplate">ans</span>
@@ -184,7 +200,7 @@ const posts = (await getCollection('blog')).sort(
             d'expérience
           </p>
         </li>
-        <li class="flex flex-col gap-2">
+        <li class="flex flex-col gap-2 animate-fade-in">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number2 flex flex-col-reverse text-5xl"></p>
             <span class="font-copperplate">+</span>
@@ -193,7 +209,6 @@ const posts = (await getCollection('blog')).sort(
             Projets réalisés
           </p>
         </li>
-
         <li class="flex flex-col gap-2">
           <div class="flex items-end font-bold text-5xl gap-2 justify-center">
             <p class="number3 flex flex-col-reverse text-5xl"></p>
@@ -214,45 +229,54 @@ const posts = (await getCollection('blog')).sort(
         </li>
       </ul>
     </section>
-
-    <section class="flex flex-col mx-32 gap-20 ">
-      <h2 class="text-4xl font-copperplate font-bold text-center">Mes réalisations</h2>
+    
+    <section class="flex flex-col mx-32 gap-20">
+      <h2 class="text-4xl font-copperplate font-bold text-center text-black">
+        Mes réalisations
+      </h2>
       <ul class="flex flex-col gap-14">
         {
           posts.map((post, index) => (
             <li>
-              <a href={`/blog/${post.slug}/`} class={`flex flex-col lg:flex-row gap-40  ${index % 2 === 0 ? '' : 'flex-row-reverse lg:flex-row-reverse'}`}>
+              <div  class={`flex flex-col lg:flex-row gap-40  ${index % 2 === 0 ? '' : 'flex-row-reverse lg:flex-row-reverse'}`}>
                 <img src={post.data.heroImage} alt="image" class="w-1/2 -m-[2px]"/>
                 <div class="flex flex-col justify-end w-1/2 gap-2">
                   <h3 class="text-4xl font-bold font-copperplate">{post.data.title}</h3>
-                  <p class="text-lg font-montserrat">{post.data.description}</p>
+                  <p class="text-sm font-montserrat">{post.data.description}</p>
+                  <a href={`/blog/${post.slug}/`} class="bg-black border-2 border-black text-white px-5 py-3 w-1/4 text-center hover:bg-white hover:text-black hover:border-2">Voir le projet</a>
                 </div>
-              </a>
+              </div>
             </li>
           ))
         }
 
       </ul>
     </section>
-
-    <section class="flex flex-col lg:flex-row">
-      <div class="flex flex-col lg:ml-32 items-center justify-center text-center p-44 gap-5">
+   
+    
+    <section class="flex flex-col lg:flex-row bg-white">
+      <div class="flex flex-col items-center justify-center text-center p-44 gap-5">
         <div class="flex flex-col justify-center gap-5">
-          <h2 class="text-4xl font-copperplate font-bold">Contactez-moi</h2>
-          <p class="text-sm lg:text-lg font-montserrat">
-            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième
-            année de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné
-            par la création numérique sous toutes ses formes, je me spécialise
-            en webdesign, production vidéo, et design UI/UX. Mon objectif est de
+          <h2
+            class="text-4xl font-copperplate font-bold text-black"
+          >
+            Contactez-moi
+          </h2>
+          <p
+            class="text-sm lg:text-lg font-montserrat text-gray-600"
+          >
+            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année
+            de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné par la
+            création numérique sous toutes ses formes, je me spécialise en
+            webdesign, production vidéo, et design UI/UX. Mon objectif est de
             concevoir des expériences visuelles et interactives qui allient
             esthétique et fonctionnalité.
           </p>
         </div>
-        <button class="bg-black text-white px-5 py-3 font-bold w-1/6"
+        <button class="bg-black border-2 border-black text-white px-5 py-3 w-44 hover:bg-white hover:text-black hover:border-2"
           >Contact</button
         >
       </div>
-      
     </section>
 </BaseLayout>
 
