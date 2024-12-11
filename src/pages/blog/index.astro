@@ -9,24 +9,28 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <BaseLayout> 
-	
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-									</p>
-								</a>
-							</li>
-				
-						))
-					}
-				</ul>
-			</section>
-		</main>
-	</BaseLayout>
+	<main class="py-8 mx-32">
+		<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+		  {
+			posts.map((post, index) => (
+			  <li key={post.slug} class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 justify-between">
+				<a href={`/blog/${post.slug}/`} class="flex flex-col">
+				  <img
+					width={720}
+					height={360}
+					src={post.data.heroImage}
+					alt={post.data.title}
+					class="w-full h-48 object-cover transition-transform hover:scale-105"
+				  />
+				  <div class="p-8 flex flex-col justify-between gap-2">
+					<h4 class="text-2xl font-bold mb-2 text-gray-800">{post.data.title}</h4>
+					<p class="text-gray-600">{post.data.description}</p>
+					<button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">Voir le projet</button>
+				  </div>
+				</a>
+			  </li>
+			))
+		  }
+		</ul>
+	</main>
+</BaseLayout>

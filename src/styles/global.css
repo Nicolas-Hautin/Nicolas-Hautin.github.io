@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Copperplate Gothic";
-  src: url("/font/copperplategothic-light.ttf") format("ttf");
+  src: url("../font/copperplategothic-light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
