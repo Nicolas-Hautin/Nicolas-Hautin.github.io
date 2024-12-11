@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: "Copperplate Gothic";
-  src: url("/font/copperplategothic_bold.ttf") format("ttf");
+  src: url("/fonts/copperplategothic_bold.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Copperplate Gothic";
-  src: url("../font/copperplategothic-light.ttf") format("ttf");
+  src: url("/fonts/copperplategothic-light.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
