@@ -24,12 +24,12 @@ import { SITE_TITLE } from '../consts';
       <span class="text-bold w-48 font-sans no-underline">Nicolas HAUTIN</span>
   </a>
     <div class="relative">
-    <button id="menu-button" class="flex flex-col gap-1.5 items-center justify-center w-10 h-10 bg-white focus:outline-none">
+    <span id="menu-button" class="flex flex-col gap-1.5 items-center justify-center w-10 h-10 bg-white focus:outline-none">
       <span class="w-6 h-1 bg-black transition-all duration-300"></span>
       <span class="w-6 h-1 bg-black transition-all duration-300"></span>
       <span class="w-6 h-1 bg-black transition-all duration-300"></span>
-    </button>
-<div id="menu" class="absolute top-12 right-0 bg-white shadow-lg rounded-lg py-5 px-24 opacity-0 invisible transition-all duration-300 transform scale-100">
+    </span>
+<div id="menu" class="absolute top-12 right-0 bg-white shadow-lg rounded-lg py-5 px-24 opacity-0 invisible transition-all duration-300 transform scale-100 z-50">
   <ul class="w-28 flex flex-col gap-5">
     <li class="w-12">
       <HeaderLink href="/" class="w-44">Accueil</HeaderLink>          

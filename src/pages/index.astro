@@ -10,7 +10,7 @@ const posts = (await getCollection("blog"))
 
 <BaseLayout>
   <div
-    class="flex h-screen flex-col-reverse sm:flex-row lg:flex-row items-center justify-center lg:mt-0 p-16 lg:px-32 lg:py-0 w-full gap-0 lg:gap-0" >
+    class="flex h-screen flex-col-reverse sm:flex-row lg:flex-row items-center justify-center lg:mt-0 p-10 lg:px-32 lg:py-0 w-full gap-0 lg:gap-0" >
     <div class="lg:w-1/2 flex flex-col gap-5 justify-center items-center sm:items-start">
       <p class="hidden border-2 sm:flex items-center justify-center border-black px-5 py-2 font-bold w-32">
         2024-2025
@@ -28,13 +28,13 @@ const posts = (await getCollection("blog"))
         href="/blog">Mes réalisations</a>
     </div>
     <div class="lg:w-1/2 p-10 lg:p-28 lg:flex lg:items-center justify-center">
-      <img src="./ordinateur.png" alt="ordinateur2" class="" />
+      <img src="./ordinateur.webp" alt="ordinateur2" class="" />
     </div>
   </div>
 
   <section id="propos" class="flex flex-col lg:flex-row items-center">
     <div
-      class="p-16 flex flex-col justify-center lg:w-1/2 lg:p-0 lg:mx-32 gap-5"
+      class="p-10 flex flex-col justify-center lg:w-1/2 lg:p-0 lg:mx-32 gap-5"
     >
       <div class="flex flex-col justify-center gap-5">
         <h2 class="text-4xl font-copperplate font-bold text-black">À propos</h2>
@@ -196,9 +196,9 @@ const posts = (await getCollection("blog"))
                 class="w-full h-48 object-cover transition-transform hover:scale-105"
               />
               <div class="p-8 flex flex-col justify-between gap-2">
-                <h4 class="text-2xl font-bold mb-2 text-gray-800">
+                <h3 class="text-2xl font-bold mb-2 text-gray-800">
                   {post.data.title}
-                </h4>
+                </h3>
                 <p class="text-gray-600">{post.data.description}</p>
                 <button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">
                   Voir le projet
