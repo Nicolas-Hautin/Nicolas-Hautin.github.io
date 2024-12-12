@@ -2,7 +2,22 @@
 const today = new Date();
 ---
 
-<footer class=" flex p-2 text-center justify-center">
-	&copy; {today.getFullYear()} Nicolas HAUTIN. Tous droits réservés.
+<footer class="bg-black p-10">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="text-center md:text-left mb-4 md:mb-0">
+      <img src="/icon.png" alt="favicon" class="w-8 inline-block mr-2">
+      <span class="text-bold text-white font-sans no-underline">Nicolas HAUTIN</span>
+    </div>
+    <div class="flex gap-2 md:flex-row items-center">
+		
+      <a href="/" class=" font-semibold text-white">Accueil</a>
+      <a href="/#propos" class=" font-semibold text-white">À Propos</a>
+      <a href="/blog" class=" font-semibold text-white">Portfolio</a>
+      <a href="/contact" class=" font-semibold text-white">Contact</a>
 	
+    </div>
+    <div class="text-center text-white md:text-right mt-4 md:mt-0">
+      &copy; {today.getFullYear()} Nicolas HAUTIN. Tous droits réservés.
+    </div>
+  </div>
 </footer>
