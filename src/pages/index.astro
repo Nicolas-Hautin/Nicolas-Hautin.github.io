@@ -9,224 +9,227 @@ const posts = (await getCollection("blog"))
 ---
 
 <BaseLayout>
-  <div class="h-screen flex flex-col lg:flex-row items-center justify-center lg:-mt-24 p-5 lg:px-32 w-full gap-16 lg:gap-0 -mt-36">
-            <div class="lg:w-1/2 flex flex-col gap-5 justify-center items-center lg:items-start">
-              <p class="border-2 flex items-center justify-center border-black px-5 py-2 font-bold w-32">2024-2025</p>
-              <h1 class="text-2xl lg:text-6xl font-semibold font-copperplate">Portfolio</h1>
-              <p class="text-sm lg:text-xl text-center lg:text-left">
-                Bienvenue dans l'univers créatif de Nicolas HAUTIN !
-            <br />
-              Découvrez mes projets et compétences issus de ma formation MMI.
-            </p>
-            <a
-            class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
-            href="/blog">Mes réalisations</a
-          >
-            </div>
-            <div class="lg:w-1/2 p-28 lg:flex lg:items-center justify-center">
-              <img src="./ordinateur.png" alt="ordinateur2" class="" />
-            </div>
-          
-      
+  <div
+    class="flex h-screen flex-col-reverse sm:flex-row lg:flex-row items-center justify-center lg:mt-0 p-16 lg:px-32 lg:py-0 w-full gap-0 lg:gap-0" >
+    <div class="lg:w-1/2 flex flex-col gap-5 justify-center items-center sm:items-start">
+      <p class="hidden border-2 sm:flex items-center justify-center border-black px-5 py-2 font-bold w-32">
+        2024-2025
+      </p>
+      <h1 class="text-2xl lg:text-6xl font-semibold font-copperplate">
+        Portfolio
+      </h1>
+      <p class="text-sm lg:text-xl text-center sm:text-left">
+        Bienvenue dans l'univers créatif de Nicolas HAUTIN !
+        <br />
+        Découvrez mes projets et compétences issus de ma formation MMI.
+      </p>
+      <a
+        class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
+        href="/blog">Mes réalisations</a>
     </div>
+    <div class="lg:w-1/2 p-10 lg:p-28 lg:flex lg:items-center justify-center">
+      <img src="./ordinateur.png" alt="ordinateur2" class="" />
+    </div>
+  </div>
 
-
-    <section id="propos" class="flex flex-col lg:flex-row items-center">
-      <div
-        class="p-10 flex flex-col justify-center lg:w-1/2 lg:p-0 lg:ml-32 lg:pr-32 gap-5"
-      >
-        <div class="flex flex-col justify-center gap-5">
-          <h2 class="text-4xl font-copperplate font-bold text-black">À propos</h2>
-          <p class="text-lg font-montserrat text-gray-600">
-            Bonjour et bienvenue sur mon portfolio !
-          </p>
-          <p class="text-sm lg:text-lg font-montserrat text-gray-600">
-            Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année
-            de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné par la
-            création numérique sous toutes ses formes, je me spécialise en
-            webdesign, production vidéo, et design UI/UX. Mon objectif est de
-            concevoir des expériences visuelles et interactives qui allient
-            esthétique et fonctionnalité.
-          </p>
-        </div>
-        <div>
-          <a
-            class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
-            href="/blog">Mes réalisations</a
-          >
-        </div>
+  <section id="propos" class="flex flex-col lg:flex-row items-center">
+    <div
+      class="p-16 flex flex-col justify-center lg:w-1/2 lg:p-0 lg:mx-32 gap-5"
+    >
+      <div class="flex flex-col justify-center gap-5">
+        <h2 class="text-4xl font-copperplate font-bold text-black">À propos</h2>
+        <p class="text-lg font-montserrat text-gray-600">
+          Bonjour et bienvenue sur mon portfolio !
+        </p>
+        <p class="text-sm lg:text-lg font-montserrat text-gray-600">
+          Je m'appelle Nicolas HAUTIN et je suis actuellement en troisième année
+          de BUT Métiers du Multimédia et de l'Internet (MMI). Passionné par la
+          création numérique sous toutes ses formes, je me spécialise en
+          webdesign, production vidéo, et design UI/UX. Mon objectif est de
+          concevoir des expériences visuelles et interactives qui allient
+          esthétique et fonctionnalité.
+        </p>
       </div>
-      <div
-        class="lg:w-1/2 lg:pr-32 lg:pl-16 bg-black flex justify-center items-center min-h-screen"
-      >
-        <ul class="p-10 lg:p-5 text-white flex flex-col gap-16">
-          <li class="flex gap-10">
-            <img
-              src="/ordinateur.svg"
-              alt="ampoule"
-              class="lg:w-16 w-10 rounded-lg shadow-lg"
-              loading="lazy"
-            />
-            <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
-                Webdesign
-              </h3>
-              <p class="text-sm lg:text-lg font-montserrat">
-                Je conçois des designs modernes et attrayants pour le web, en
-                mettant l'accent sur l'ergonomie et l'esthétique.
-              </p>
-            </div>
-          </li>
-          <li class="flex gap-10">
-            <img
-              src="/camera.svg"
-              alt="pinceau"
-              class="lg:w-16 w-10 rounded-lg shadow-lg"
-              loading="lazy"
-            />
-            <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
-                Production vidéo
-              </h3>
-              <p class="text-sm lg:text-lg font-montserrat">
-                Je crée et monte des vidéos captivantes qui racontent des histoires
-                et mettent en valeur votre message.
-              </p>
-            </div>
-          </li>
-          <li class="flex gap-10">
-            <img
-              src="/pinceau.svg"
-              alt=""
-              class="lg:w-16 w-10 rounded-lg shadow-lg"
-              loading="lazy"
-            />
-            <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
-                UI/UX Design
-              </h3>
-              <p class="text-sm lg:text-lg font-montserrat">
-                Je conçois des interfaces intuitives et centrées sur l'utilisateur,
-                pour des expériences fluides et engageantes.
-              </p>
-            </div>
-          </li>
-          <li class="flex gap-10">
-            <img
-              src="/ampoule.svg"
-              alt=""
-              class="lg:w-12 w-10 rounded-lg shadow-lg"
-              loading="lazy"
-            />
-            <div>
-              <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
-                Créativité
-              </h3>
-              <p class="text-lg font-montserrat">
-                J'aime transformer les idées en projets concrets et uniques.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    
-    <section class="flex flex-col lg:flex-row items-center justify-center py-40">
-      <ul class="flex flex-col md:flex-row lg:flex-row gap-20">
-        <li class="flex flex-col gap-2">
-          <div class="flex items-end font-bold text-5xl gap-2 justify-center">
-            <p class="number1 flex flex-col-reverse text-5xl"></p>
-            <span class="font-copperplate">ans</span>
-          </div>
-          <p class="flex justify-center uppercase font-copperplatelight">
-            d'expérience
-          </p>
-        </li>
-        <li class="flex flex-col gap-2">
-          <div class="flex items-end font-bold text-5xl gap-2 justify-center">
-            <p class="number2 flex flex-col-reverse text-5xl"></p>
-            <span class="font-copperplate">+</span>
-          </div>
-          <p class="flex justify-center uppercase font-copperplatelight">
-            Projets réalisés
-          </p>
-        </li>
-        <li class="flex flex-col gap-2">
-          <div class="flex items-end font-bold text-5xl gap-2 justify-center">
-            <p class="number3 flex flex-col-reverse text-5xl"></p>
-            <span class="font-copperplate">h</span>
-          </div>
-          <p class="flex justify-center uppercase font-copperplatelight">
-            Production vidéo
-          </p>
-        </li>
-        <li class="flex flex-col gap-2">
-          <div class="flex items-end font-bold text-5xl gap-2 justify-center">
-            <p class="number4 flex flex-col-reverse text-5xl"></p>
-            <span class="font-copperplate">+</span>
-          </div>
-          <p class="flex justify-center uppercase font-copperplatelight">
-            Sites internet
-          </p>
-        </li>
-      </ul>
-    </section>
-    
-    <section class="flex flex-col mx-10 lg:mx-32 gap-20">
-      <h2 class="text-4xl font-copperplate font-bold text-center text-black">
-        Mes réalisations
-      </h2>
-    
-      <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 -z-10">
-        {
-          posts.map((post, index) => (
-            <li
-              key={post.slug}
-              class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 justify-between"
-            >
-              <a href={`/blog/${post.slug}/`} class="flex flex-col">
-                <img
-                  width={720}
-                  height={360}
-                  src={post.data.heroImage}
-                  alt={post.data.title}
-                  class="w-full h-48 object-cover transition-transform hover:scale-105"
-                />
-                <div class="p-8 flex flex-col justify-between gap-2">
-                  <h4 class="text-2xl font-bold mb-2 text-gray-800">
-                    {post.data.title}
-                  </h4>
-                  <p class="text-gray-600">{post.data.description}</p>
-                  <button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">
-                    Voir le projet
-                  </button>
-                </div>
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </section>
-    
-    <section class="flex flex-col lg:flex-row">
-      <div class="flex flex-col items-center justify-center text-center p-44 gap-5">
-        <div class="flex flex-col justify-center gap-5">
-          <h2 class="text-4xl font-copperplate font-bold text-black">
-            Contactez-moi
-          </h2>
-          <p class="text-sm lg:text-lg font-montserrat text-gray-600">
-            Vous avez une question, un projet ou simplement envie d'en savoir plus
-            sur mon travail ?<br /> N'hésitez pas à me contacter ! Je suis disponible
-            pour échanger, répondre à vos besoins et explorer ensemble les possibilités
-            de collaboration qui feront la différence.
-          </p>
-        </div>
+      <div>
         <a
-          class="bg-black border-2 border-black text-white px-10 py-3 hover:bg-white hover:text-black hover:border-2"
-          href="/contact">Contact</a
+          class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
+          href="/blog">Mes réalisations</a
         >
       </div>
-    </section>
+    </div>
+    <div
+      class="lg:w-1/2 lg:pr-32 lg:pl-16 bg-black flex justify-center items-center min-h-screen p-0 m-0 w-full"
+    >
+      <ul class="p-16 lg:p-5 text-white flex flex-col gap-16">
+        <li class="flex gap-10">
+          <img
+            src="/ordinateur.svg"
+            alt="ampoule"
+            class="lg:w-16 w-10 rounded-lg shadow-lg"
+            loading="lazy"
+          />
+          <div>
+            <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+              Webdesign
+            </h3>
+            <p class="text-sm lg:text-lg font-montserrat">
+              Je conçois des designs modernes et attrayants pour le web, en
+              mettant l'accent sur l'ergonomie et l'esthétique.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-10">
+          <img
+            src="/camera.svg"
+            alt="pinceau"
+            class="lg:w-16 w-10 rounded-lg shadow-lg"
+            loading="lazy"
+          />
+          <div>
+            <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+              Production vidéo
+            </h3>
+            <p class="text-sm lg:text-lg font-montserrat">
+              Je crée et monte des vidéos captivantes qui racontent des
+              histoires et mettent en valeur votre message.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-10">
+          <img
+            src="/pinceau.svg"
+            alt=""
+            class="lg:w-16 w-10 rounded-lg shadow-lg"
+            loading="lazy"
+          />
+          <div>
+            <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+              UI/UX Design
+            </h3>
+            <p class="text-sm lg:text-lg font-montserrat">
+              Je conçois des interfaces intuitives et centrées sur
+              l'utilisateur, pour des expériences fluides et engageantes.
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-10">
+          <img
+            src="/ampoule.svg"
+            alt=""
+            class="lg:w-12 w-10 rounded-lg shadow-lg"
+            loading="lazy"
+          />
+          <div>
+            <h3 class="text-lg lg:text-xl font-semibold font-copperplate">
+              Créativité
+            </h3>
+            <p class="text-lg font-montserrat">
+              J'aime transformer les idées en projets concrets et uniques.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col lg:flex-row items-center justify-center py-20 lg:py-40"
+  >
+    <ul class="flex flex-col md:flex-row lg:flex-row gap-20">
+      <li class="flex flex-col gap-2">
+        <div class="flex items-end font-bold text-5xl gap-2 justify-center">
+          <p class="number1 flex flex-col-reverse text-5xl"></p>
+          <span class="font-copperplate">ans</span>
+        </div>
+        <p class="flex justify-center uppercase font-copperplatelight">
+          d'expérience
+        </p>
+      </li>
+      <li class="flex flex-col gap-2">
+        <div class="flex items-end font-bold text-5xl gap-2 justify-center">
+          <p class="number2 flex flex-col-reverse text-5xl"></p>
+          <span class="font-copperplate">+</span>
+        </div>
+        <p class="flex justify-center uppercase font-copperplatelight">
+          Projets réalisés
+        </p>
+      </li>
+      <li class="flex flex-col gap-2">
+        <div class="flex items-end font-bold text-5xl gap-2 justify-center">
+          <p class="number3 flex flex-col-reverse text-5xl"></p>
+          <span class="font-copperplate">h</span>
+        </div>
+        <p class="flex justify-center uppercase font-copperplatelight">
+          Production vidéo
+        </p>
+      </li>
+      <li class="flex flex-col gap-2">
+        <div class="flex items-end font-bold text-5xl gap-2 justify-center">
+          <p class="number4 flex flex-col-reverse text-5xl"></p>
+          <span class="font-copperplate">+</span>
+        </div>
+        <p class="flex justify-center uppercase font-copperplatelight">
+          Sites internet
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="flex flex-col mx-10 lg:mx-32 gap-10 lg:gap-20">
+    <h2 class="text-4xl font-copperplate font-bold text-center text-black">
+      Mes réalisations
+    </h2>
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 z-10">
+      {
+        posts.map((post, index) => (
+          <li
+            key={post.slug}
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 justify-between"
+          >
+            <a href={`/blog/${post.slug}/`} class="flex flex-col">
+              <img
+                width={720}
+                height={360}
+                src={post.data.heroImage}
+                alt={post.data.title}
+                class="w-full h-48 object-cover transition-transform hover:scale-105"
+              />
+              <div class="p-8 flex flex-col justify-between gap-2">
+                <h4 class="text-2xl font-bold mb-2 text-gray-800">
+                  {post.data.title}
+                </h4>
+                <p class="text-gray-600">{post.data.description}</p>
+                <button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">
+                  Voir le projet
+                </button>
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section
+    class="flex flex-col items-center justify-center text-center p-16 lg:p-44 gap-5"
+  >
+    <div class="flex flex-col justify-center gap-5">
+      <h2 class="text-4xl font-copperplate font-bold text-black">
+        Contactez-moi
+      </h2>
+      <p class="text-sm lg:text-lg font-montserrat text-gray-600">
+        Vous avez une question, un projet ou simplement envie d'en savoir plus
+        sur mon travail ?<br /> N'hésitez pas à me contacter ! Je suis disponible
+        pour échanger, répondre à vos besoins et explorer ensemble les possibilités
+        de collaboration qui feront la différence.
+      </p>
+    </div>
+    <a
+      class="bg-black border-2 border-black text-white px-10 py-3 hover:bg-white hover:text-black hover:border-2"
+      href="/contact">Contact</a
+    >
+  </section>
 </BaseLayout>
 <script>
   document.addEventListener("DOMContentLoaded", function () {

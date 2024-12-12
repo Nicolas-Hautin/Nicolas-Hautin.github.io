@@ -4,19 +4,20 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header id="header" class="transition-all duration-300 bg-white">
-    <nav class="lg:flex justify-between items-center py-2 px-32 max-h-36 z-100 hidden font-medium">
-      <a class="flex items-center gap-2" href="/">          <img src="/icon.png" alt="favicon" class="w-8">
-        <span class="text-bold w-48 font-sans no-underline">Nicolas HAUTIN</span>
+<header id="header" class="transition-all duration-300 bg-white z-50">
+  <nav class="lg:flex justify-between items-center py-2 px-32 max-h-36 hidden font-medium">
+      <a class="flex items-center gap-2" href="/">
+          <img src="/icon.png" alt="favicon" class="w-8">
+          <span class="text-bold w-48 font-sans no-underline">Nicolas HAUTIN</span>
       </a>
-        <div class="container flex gap-5 justify-center items-center p-2">
-            <HeaderLink href="/">Accueil</HeaderLink>
-            <HeaderLink href="/#propos">À Propos</HeaderLink>
-            <HeaderLink href="/blog">Portfolio</HeaderLink>
-            <HeaderLink href="/contact">Contact</HeaderLink>
-        </div>
-        <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" href="/blog">Mes réalisations</a>
-    </nav>
+      <div class="container flex gap-5 justify-center items-center p-2">
+          <HeaderLink href="/">Accueil</HeaderLink>
+          <HeaderLink href="/#propos">À Propos</HeaderLink>
+          <HeaderLink href="/blog">Portfolio</HeaderLink>
+          <HeaderLink href="/contact">Contact</HeaderLink>
+      </div>
+      <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" href="/blog">Mes réalisations</a>
+  </nav>
 </header>
 
 <script>
