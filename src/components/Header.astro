@@ -1,58 +1,67 @@
 ---
+// filepath: /c:/Users/nicol/OneDrive/Bureau/Nouveau dossier/Nicolas-Hautin.github.io/src/components/Header.astro
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<nav class=" lg:flex justify-between items-center py-2 px-32 max-h-36 z-10 hidden font-medium">
-    <HeaderLink href="/" class="text-bold w-48 font-sans no-underline">Nicolas HAUTIN</HeaderLink>
-		<div class="container flex gap-5 justify-center items-center p-2">
-			<HeaderLink href="/"> Accueil</HeaderLink>
-      <HeaderLink href="/#propos">À Propos</HeaderLink>
-			<HeaderLink href="/blog">Portfolio</HeaderLink>
-			<HeaderLink href="/contact">Contact</HeaderLink>
-		</div>
-
-
-
-      <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" href="/blog">Mes réalisations</a>
-	
-	</nav>
+<header id="header" class="transition-all duration-300 bg-white">
+    <nav class="lg:flex justify-between items-center py-2 px-32 max-h-36 z-100 hidden font-medium">
+        <HeaderLink href="/" class="text-bold w-48 font-sans no-underline">Nicolas HAUTIN</HeaderLink>
+        <div class="container flex gap-5 justify-center items-center p-2">
+            <HeaderLink href="/">Accueil</HeaderLink>
+            <HeaderLink href="/#propos">À Propos</HeaderLink>
+            <HeaderLink href="/blog">Portfolio</HeaderLink>
+            <HeaderLink href="/contact">Contact</HeaderLink>
+        </div>
+        <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" href="/blog">Mes réalisations</a>
+    </nav>
 </header>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 0) {
+            header.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'bg-white', 'shadow-md');
+        } else {
+            header.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'bg-white', 'shadow-md');
+        }
+    });
+</script>
+
 <style>
-	.container a {
-  color: #000000;
-  text-decoration: none;
-  padding: 10px;
-  position: relative;
-  cursor: pointer;
-}
+    .container a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        position: relative;
+        cursor: pointer;
+    }
 
-.container a:before,
-.container a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #000000;
-  opacity: 0;
-  transition: all 0.3s;
-}
+    .container a:before,
+    .container a:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #000000;
+        opacity: 0;
+        transition: all 0.3s;
+    }
 
-.container a:before {
-  top: 0;
-  transform: translateY(10px);
-}
+    .container a:before {
+        top: 0;
+        transform: translateY(10px);
+    }
 
-.container a:after {
-  bottom: 0;
-  transform: translateY(-10px);
-}
+    .container a:after {
+        bottom: 0;
+        transform: translateY(-10px);
+    }
 
-.container a:hover:before,
-.container a:hover:after {
-  opacity: 1;
-  transform: translateY(0);
-}
+    .container a:hover:before,
+    .container a:hover:after {
+        opacity: 1;
+        transform: translateY(0);
+    }
 </style>
