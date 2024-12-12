@@ -53,7 +53,7 @@ import { SITE_TITLE } from '../consts';
 <script>
     window.addEventListener('scroll', function() {
         const header = document.getElementById('header');
-        if (window.scrollY > 0) {
+        if (window.scrollY > 150) {
             header.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'bg-white', 'shadow-md');
         } else {
             header.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'bg-white', 'shadow-md');

@@ -1,6 +1,6 @@
 ---
 title: 'CP Company'
-description: 'Création d’une identité visuelle unique pour un bar à thème'
+description: 'Création d’un site de e-commerce avec wordpress et woocomerce'
 pubDate: 'Jul 22 2022'
 heroImage: '/CPCompany.png'
 ---

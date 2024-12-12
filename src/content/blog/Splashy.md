@@ -1,6 +1,6 @@
 ---
 title: 'Splashy'
-description: 'Création d’une identité visuelle unique pour un bar à thème, alliant design de logo, charte graphique et ambiance visuelle immersive.'
+description: 'Création d’un mini jeu plus réalisation d’un one page de présentation'
 pubDate: 'Jul 15 2022'
 heroImage: '/Splashy.png'
 ---
