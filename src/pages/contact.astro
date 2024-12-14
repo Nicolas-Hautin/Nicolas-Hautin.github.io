@@ -20,11 +20,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </h2>
         <div class="flex items-center gap-5">
           <div class="w-5"><img src="/envelope.svg" alt="envelope" /></div>
-          <span class="text-gray-600">nicolas.hautin@outlook.fr</span>
-        </div>
+          <a href="mailto:nicolas.hautin@outlook.fr" class="text-gray-600 hover:underline">nicolas.hautin@outlook.fr</a>        </div>
         <div class="flex items-center gap-5">
           <div class="w-5"><img src="/phone.svg" alt="telephone" /></div>
-          <span class="text-gray-600">06 43 50 89 80</span>
+          <a href="tel:+33643508980" class="text-gray-600 hover:underline">06 43 50 89 80</a>
         </div>
         <div class="mt-2">
           <a
@@ -42,62 +41,61 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       <h2 class="text-2xl font-copperplate font-bold text-black mb-4">
         Envoyez-moi un message
       </h2>
-      <form>
+      <form action="https://formspree.io/f/mzzbqlkg" method="POST">
         <div class="mb-4 flex gap-5">
           <div class="w-1/2">
-            <label for="name" class="block text-gray-600 font-medium mb-2"
-              >Nom</label
-            >
+            <label for="name" class="block text-gray-600 font-medium mb-2">Nom</label>
             <input
               type="text"
               id="name"
               name="name"
               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none"
               placeholder="Votre nom"
+              required
             />
           </div>
           <div class="w-1/2">
-            <label for="name" class="block text-gray-600 font-medium mb-2"
-              >Prénom</label
-            >
+            <label for="prénom" class="block text-gray-600 font-medium mb-2">Prénom</label>
             <input
               type="text"
               id="prénom"
-              name="name"
+              name="prénom"
               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none"
               placeholder="Votre prénom"
+              required
             />
           </div>
         </div>
-
+      
         <div class="mb-4">
-          <label for="email" class="block text-gray-600 font-medium mb-2"
-            >Email</label
-          >
+          <label for="email" class="block text-gray-600 font-medium mb-2">Email</label>
           <input
             type="email"
             id="email"
             name="email"
             class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none"
             placeholder="Votre adresse email"
+            required
           />
         </div>
         <div class="mb-4">
-          <label for="message" class="block text-gray-600 font-medium mb-2"
-            >Message</label
-          >
+          <label for="message" class="block text-gray-600 font-medium mb-2">Message</label>
           <textarea
             id="message"
             name="message"
             rows="5"
             class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-black focus:outline-none"
-            placeholder="Votre message"></textarea>
+            placeholder="Votre message"
+            required
+          ></textarea>
         </div>
         <div>
-          <a
+          <button
+            type="submit"
             class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2"
-            href="#">Envoyer</a
           >
+            Envoyer
+          </button>
         </div>
       </form>
     </div>
