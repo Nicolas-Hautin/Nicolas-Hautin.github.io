@@ -2,7 +2,7 @@
 title: 'Maple Lounge'
 description: 'Imagination et création d’une identité visuelle complète pour un bar à thème'
 pubDate: 'Jun 19 2024'
-heroImage: '/MapleLounge.png'
+heroImage: '/MapleLounge.webp'
 ---
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
