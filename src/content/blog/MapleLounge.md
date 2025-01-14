@@ -1,204 +1,61 @@
 ---
-title: 'Maple Lounge'
+title: 'Bar à Thème'
 description: 'Imagination et création d’une identité visuelle complète pour un bar à thème'
 pubDate: 'Jun 19 2024'
 heroImage: '/MapleLounge.webp'
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+## Contexte du projet
 
-## Headings
+Pour cette SAE, nous devions créer, en groupe de deux, une campagne de communication visuelle complète. L'objectif était d'imaginer un **bar à thème** autour d'un concept choisi et de développer une identité visuelle cohérente pour ce bar. Nous devions tout d'abord analyser et définir un concept ainsi que des cibles, puis créer l'identité visuelle qui lui est associée et enfin produire les différents supports de communication.
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
 
-# H1
 
-## H2
+### Analyse du concept
 
-### H3
+Nous avons choisi de baser notre bar à thème sur un concept unique : un bar proposant du **sirop d'érable** dans toutes ses boissons et situé à **Stockholm**. Nous avons également décidé d'introduire une activité typique du Canada, le **tir d'érable**. Après avoir défini ce concept, nous avons réalisé un **moodboard**, des **personas** et des **user flows** pour mieux comprendre notre public cible.
 
-#### H4
+<div class=" flex flex-col md:flex-row gap-5 mt-5 mb-10">
+  <img src="/blog/lounge/mapple1.png" class="w-full lg:w-1/3 " alt="Mapple1">
+  <img src="/blog/lounge/mapple2.png" class="w-full lg:w-1/3" alt="Mapple2">
+  <img src="/blog/lounge/mapple3.png" class="w-full lg:w-1/3" alt="Mapple3">
 
-##### H5
+</div>
 
-###### H6
 
-## Paragraph
+### Création du logo
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+Une fois le concept établi, nous avons commencé à travailler sur la création du logo. Chacun de nous a effectué des recherches pour définir l'identité que nous voulions créer, puis nous avons partagé nos idées pour concevoir un logo représentant le Canada et le sirop d'érable. Nous avons exploré plusieurs options et finalisé un logo qui correspondait parfaitement à notre concept.
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+<div class=" flex flex-col md:flex-row gap-5 mt-5 mb-10">
+  <img src="/blog/lounge/mapple4.png" class="w-full lg:w-1/2 " alt="Mapple4">
+  <img src="/blog/lounge/mapple5.png" class="w-full lg:w-1/2" alt="Mapple5">
 
-## Images
+</div>
 
-### Syntax
+### Manuel d'identité
 
+Après la création du logo, nous avons élaboré le **manuel d'identité** du bar. Ce manuel reprend les couleurs, typographies et formes utilisées dans notre logo et explique nos choix graphiques. Il sert de guide pour garantir la cohérence de l'identité visuelle lors de la création des supports de communication.
+<div class="mt-5 mb-16">
+<a
+        class="bg-black border-2 border-black text-white mt-10 px-5 py-3 hover:bg-slate-100 hover:text-black hover:border-2"
+        href="/blog/lounge/manuel-identite.pdf" target="_blank">Voir le manuel d'identité</a>
+</div>
 
+### Supports de communication
 
-## Blockquotes
+Une fois le manuel d'identité terminé, nous avons créé plusieurs **supports de communication** pour promouvoir le bar. Nous avons réalisé des affiches, un **site internet** et des **stories** pour les réseaux sociaux. Chaque visuel a été conçu en respectant l'identité visuelle et en intégrant des éléments uniques, tels que la feuille d'érable, afin de rendre la campagne originale et reconnaissable. Nous avons également mis en place des ajustements après avoir échangé sur nos créations.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+<div class=" flex flex-col md:flex-row gap-5 mt-5 mb-10">
+  <img src="/blog/lounge/support-com.png" class="w-full" alt="Mapple4">
 
-### Blockquote without attribution
+</div>
 
-#### Syntax
+### Bilan
 
-```markdown
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-```
-
-#### Output
-
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.  
-> **Note** that you can use _Markdown syntax_ within a blockquote.
-
-### Blockquote with attribution
-
-#### Syntax
-
-```markdown
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-```
-
-#### Output
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-
-
-```markdown
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-```
-
-### Output
-
-| Italics   | Bold     | Code   |
-| --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
-
-## Code Blocks
-
-### Syntax
-
-we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
-
-````markdown
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-````
-
-### Output
-
-```html
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example HTML5 Document</title>
-  </head>
-  <body>
-    <p>Test</p>
-  </body>
-</html>
-```
-
-## List Types
-
-### Ordered List
-
-#### Syntax
-
-```markdown
-1. First item
-2. Second item
-3. Third item
-```
-
-#### Output
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-#### Syntax
-
-```markdown
-- List item
-- Another item
-- And another item
-```
-
-#### Output
-
-- List item
-- Another item
-- And another item
-
-### Nested list
-
-#### Syntax
-
-```markdown
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-```
-
-#### Output
-
-- Fruit
-  - Apple
-  - Orange
-  - Banana
-- Dairy
-  - Milk
-  - Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-### Syntax
-
-```markdown
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
-```
-
-### Output
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>Delete</kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+Travailler en groupe a facilité la création des visuels, car nous partagions des idées similaires. La création des supports de communication m'a permis d'explorer différentes facettes de l'identité visuelle et de comprendre l'importance de la cohérence dans une campagne. Cette SAE m'a également montré mes capacités à concevoir une identité visuelle complète et à réaliser une campagne de communication stratégique.
+<div class="mt-5 mb-16">
+<a
+        class="bg-black border-2 border-black text-white mt-10 px-5 py-3 hover:bg-slate-100 hover:text-black hover:border-2"
+        href="https://www.figma.com/design/etHlo7d7lDdxsnUcCCMld5/Alletto_Hautin_MapleLounge_SAE4.01-(Copy)?node-id=0-1&p=f&t=S06dy1E0f6MG9Qob-0" target="_blank">Voir l'ensemble du projet</a>
+</div>

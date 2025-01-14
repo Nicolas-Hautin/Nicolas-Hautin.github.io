@@ -6,12 +6,66 @@ heroImage: '/Coachella.webp'
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Contexte du projet
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+Pour ce projet, nous étions en équipe de 5 personnes. Notre objectif était de concevoir une **landing page** destinée à promouvoir un concours organisé par **Coachella**. Nous devions intégrer sur la page toutes les conditions nécessaires permettant aux participants de s'inscrire au concours. De plus, nous avions pour mission de créer une vidéo en **motion design** afin de promouvoir le concours et de réaliser une diffusion efficace pour atteindre un large public. À la fin du projet, nous devions réaliser une publication pour les **réseaux sociaux**.
+<section class="flex flex-col lg:flex-row my-10 gap-5">
+<div class="w-full lg:w-1/2 " >
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+### Organisation du projet
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+Avant de commencer notre projet, nous avons réalisé un **Trello** afin de lister l'ensemble des tâches que nous devions réaliser. Pour cela, nous avons réfléchi ensemble pour attribuer les tâches à chacun d'entre nous et déterminer le temps à consacrer à chacune d'elles.
+
+Le tableau Trello nous a permis de savoir comment chacun avançait dans ses tâches, et m'a aidé à mieux m'organiser.
+
+### Analyse
+
+
+Au début de notre projet, nous avons analysé le festival Coachella et défini des **personas** pour identifier les types de personnes susceptibles de visiter notre site. Nous avons ensuite créé des **Users Flows** pour mieux comprendre l'expérience utilisateur et déterminer les informations essentielles à afficher.
+
+### Réalisation de la maquette
+
+
+Nous avons réalisé des maquettes pour ordinateur et téléphone en utilisant **Figma**. Trois membres de l'équipe étaient responsables de la création des maquettes. La coordination était essentielle pour maintenir une identité visuelle cohérente avec celle du site de Coachella.
+
+</div>
+<div class="w-full lg:w-1/2">
+<a href="https://www.figma.com/design/XeX5MQ1gVEc9kbCACB9IqZ/Gr03---SAE3.02_HAUTIN_TREBOSC_M%C3%89CHAIN_JOSEPH_BURANELLO?node-id=796-159&p=f&t=VjiGpt9sPQANio6D-0" target="_blank">
+  <img src="/blog/figma-coachella.png" class="w-full min-w-full" alt="Coachella figma">
+</a>
+</div>
+</section>
+
+<section class="flex flex-col lg:flex-row my-16 gap-5">
+<div class="w-full lg:w-1/2 " >
+  <video class="w-full aspect-video" src="/blog/coachella/motion.mp4" controls title="motion design" frameborder="0"></video>
+</div>
+<div class="w-full lg:w-1/2 " >
+
+### Motion Design
+
+
+Nous étions deux à travailler sur la vidéo de promotion du concours. Nous avons commencé par réaliser un **storyboard** pour définir clairement les plans de la vidéo. Ensuite, nous avons utilisé **After Effects** pour créer la vidéo de 45 secondes.
+</div>
+
+</section>
+
+<section class="flex flex-col lg:flex-row my-16 gap-5">
+<div class="w-full lg:w-1/2 " >
+
+### Réel Instagram
+
+
+En fin de projet, nous avons créé un **réel Instagram** pour promouvoir le concours et encourager les artistes à participer. Une personne du groupe a pris en charge la création du réel avec **Premiere Pro**.
+</div>
+<div class="w-full lg:w-1/2 " >
+  <video class="w-full aspect-video" src="/blog/coachella/rendu-reel.mp4" controls title="Réel coachella" frameborder="0"></video>
+</div>
+</section>
+
+### Bilan
+
+Le travail en équipe m'a permis d'améliorer ma communication et ma capacité à résoudre des problèmes. J'ai compris l'importance de bien organiser le projet dès le début pour être plus efficace. Cette SAE m'a également appris à mieux collaborer et à valoriser les compétences des autres membres du groupe.
+
+En résumé, ce projet m'a permis de mettre en pratique mes connaissances dans un contexte concret et de renforcer mes compétences en conception, animation et stratégie numérique.
