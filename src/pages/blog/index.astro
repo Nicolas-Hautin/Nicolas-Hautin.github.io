@@ -10,34 +10,37 @@ const posts = (await getCollection('blog')).sort(
 
 <BaseLayout> 
 	<main class="py-8 mx-10 lg:mx-32 z-10 min-h-screen mb-10">
-		<ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-			{
-			  posts.map((post, index) => (
-				<li
-				  key={post.slug}
-				  class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 justify-between"
-				>
-				  <a href={`/blog/${post.slug}/`} class="flex flex-col">
+		<ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 z-10">
+			{posts.map((post, index) => (
+			  <li
+				key={post.slug}
+				class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-transform duration-300 transform hover:-translate-y-3 hover:scale-105 group"
+			  >
+				<a href={`/blog/${post.slug}/`} class="flex flex-col">
+				  <div class="relative overflow-hidden">
 					<img
 					  width={720}
 					  height={360}
 					  src={post.data.heroImage}
 					  alt={post.data.title}
-					  class="object-cover transition-transform hover:scale-105"
+					  class="object-cover transition-transform duration-500 group-hover:scale-110 w-full h-full"
 					/>
-					<div class="p-8 flex flex-col justify-between gap-2">
-					  <h2 class="text-2xl font-bold mb-2 font-copperplate text-gray-800">
-						{post.data.title}
-					  </h2>
-					  <p class="text-gray-600 font-montserrat text-sm">{post.data.description}</p>
-					  <button class="bg-black border-2 border-black text-white px-3 py-2 hover:bg-white hover:text-black hover:border-2">
-						Voir le projet
-					  </button>
-					</div>
-				  </a>
-				</li>
-			  ))
-			}
+				  </div>
+				  <div class="p-6 flex flex-col justify-between gap-4">
+					<h3 class="text-2xl font-bold font-copperplate text-gray-800 hover:text-black transition-colors">
+					  {post.data.title}
+					</h3>
+					<p class="text-gray-600 font-montserrat text-sm leading-relaxed">
+					  {post.data.description}
+					</p>
+	  
+					<button class="bg-black border-2 border-black text-white px-4 py-2 mt-4 rounded-lg hover:bg-white hover:text-black transition-colors duration-300">
+					  Voir le projet
+					</button>
+				  </div>
+				</a>
+			  </li>
+			))}
 		  </ul>
 	</main>
 </BaseLayout>

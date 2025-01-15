@@ -62,5 +62,3 @@ En fin de projet, nous avons créé un réel Instagram pour promouvoir le concou
 ### Bilan
 
 Le travail en équipe m'a permis d'améliorer ma communication et ma capacité à résoudre des problèmes. J'ai compris l'importance de bien organiser le projet dès le début pour être plus efficace. Cette SAE m'a également appris à mieux collaborer et à valoriser les compétences des autres membres du groupe.
-
-En résumé, ce projet m'a permis de mettre en pratique mes connaissances dans un contexte concret et de renforcer mes compétences en conception, animation et stratégie numérique.
