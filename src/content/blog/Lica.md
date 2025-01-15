@@ -1,6 +1,6 @@
 ---
 title: 'Le Lica'
-description: 'Création d’un objet 3D puis réalisation d’une vidéo du site internet de l’objet'
+description: 'Réalisation d’une vidéo pour sensibiliser les citoyens à la pollution dans l’air'
 pubDate: 'Jul 08 2024'
 heroImage: '/blog/lica/lica.png'
 
@@ -20,10 +20,9 @@ Le LICA nous a confié la mission de créer une vidéo courte pour présenter le
 - Rédaction d’un script clair et engageant.
 - Réalisation d’un storyboard pour visualiser les différentes scènes.
 - Montage et animation réalisés sur Adobe Premiere Pro, avec des transitions fluides et des visuels épurés.
-
 </div>
 <div class="w-full lg:w-1/2 mx-auto my-5 aspect-video">
-  <iframe src="/blog/lica/licaVF.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;" allowfullscreen></iframe>
+  <video src="/blog/lica/licaVF.mp4" controls title="vidéo final Lica" frameborder="0"></video>
 </div>
 </section>
 
