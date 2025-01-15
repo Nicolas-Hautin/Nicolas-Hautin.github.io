@@ -16,7 +16,10 @@ import { SITE_TITLE } from '../consts';
           <HeaderLink href="/blog">Portfolio</HeaderLink>
           <HeaderLink href="/contact">Contact</HeaderLink>
       </div>
-      <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" href="/blog">Mes réalisations</a>
+      <a   class="bg-black border-2 border-black text-white px-6 py-2 mt-4 rounded-lg w-56 hover:bg-slate-100 hover:text-black transition-colors duration-300       <a class="bg-black border-2 border-black text-white px-5 py-3 hover:bg-white hover:text-black hover:border-2 whitespace-nowrap" 
+"        
+
+      href="/blog">Mes réalisations</a>
   </nav>
   <nav class="flex lg:hidden justify-between items-center p-5 bg-white">
     <a class="flex items-center gap-2" href="/">
@@ -49,6 +52,9 @@ import { SITE_TITLE } from '../consts';
 </nav>
 </header>
 
+<div id="progress-bar-container">
+  <div id="progress-bar"></div>
+</div>
 
 <script>
     window.addEventListener('scroll', function() {
@@ -70,6 +76,13 @@ import { SITE_TITLE } from '../consts';
       menu.classList.toggle('invisible');
       menu.classList.toggle('scale-75');
     });
+
+    window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  document.getElementById("progress-bar").style.width = `${scrollPercent}%`;
+});
   </script>
 <style>
     .container a {
