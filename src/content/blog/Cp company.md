@@ -1,7 +1,7 @@
 ---
 title: 'CP Company'
 description: 'Création d’un site e-commerce WordPress avec composants personnalisés en Tailwind CSS'
-pubDate: 'Jul 22 2025'
+pubDate: 'Jul 27 2023'
 heroImage: '/blog/cpcompany/cover.png'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Le Lica'
 description: 'Réalisation d’une vidéo pour sensibiliser les citoyens à la pollution dans l’air'
-pubDate: 'Jul 08 2024'
+pubDate: 'Jul 03 2025'
 heroImage: '/blog/lica/lica.png'
 
 ---

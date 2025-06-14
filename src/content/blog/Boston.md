@@ -1,7 +1,7 @@
 ---
 title: 'Chien Robot'
 description: 'Création d’un objet 3D puis réalisation d’une vidéo du site internet de l’objet'
-pubDate: 'Jul 08 2024'
+pubDate: 'Jul 26 2023'
 heroImage: '/Boston.webp'
 
 ---

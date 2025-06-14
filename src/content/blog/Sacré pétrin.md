@@ -1,7 +1,7 @@
 ---
 title: 'Sacré pétrin'
 description: 'Création d’un site internet one page avec une nouvelle identité graphique complète'
-pubDate: 'Jul 22 2025'
+pubDate: 'Jul 05 2025'
 heroImage: '/blog/sacrepetrin/logo.png'
 ---
 

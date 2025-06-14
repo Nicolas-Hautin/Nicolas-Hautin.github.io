@@ -1,9 +1,8 @@
 ---
 title: 'Bar à Thème'
 description: 'Imagination et création d’une identité visuelle complète pour un bar à thème'
-pubDate: '2024'
+pubDate: 'Jul 02 2025'
 heroImage: '/MapleLounge.webp'
-tag: 'star'
 ---
 
 ## Contexte du projet

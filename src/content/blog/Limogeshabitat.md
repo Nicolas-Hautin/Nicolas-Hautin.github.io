@@ -1,7 +1,7 @@
 ---
 title: 'Limoges habitat'
 description: 'Création de toute l’identité visuelle d’un concours, avec justification des choix graphiques'
-pubDate: 'Jul 22 2025'
+pubDate: 'Jul 04 2025'
 heroImage: '/blog/limogeshabitat/cover.png'
 ---
 

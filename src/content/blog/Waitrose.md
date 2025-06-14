@@ -1,7 +1,7 @@
 ---
 title: 'Waitrose'
 description: 'Créer une vidéo en stop motion qui sensibilise au gaspillage alimentaire'
-pubDate: 'Jul 22 2025'
+pubDate: 'Jul 22 2023'
 heroImage: '/blog/waitrose/waitrose.png'
 ---
 

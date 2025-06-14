@@ -1,7 +1,7 @@
 ---
 title: 'Affiche Animée'
-description: 'Animation d’une affiche vectoriel de CUBA en motion design'
-pubDate: 'Jul 22 2022'
+description: 'Animation dynamique d’une affiche vectoriel de CUBA en motion design'
+pubDate: 'Jul 25 2023'
 heroImage: '/blog/affiche/coveraffiche.png'
 ---
 

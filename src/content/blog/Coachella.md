@@ -1,7 +1,7 @@
 ---
 title: 'Coachella'
 description: 'Refonte de l’identité du concours et communication sur les réseaux sociaux'
-pubDate: 'Jul 08 2024'
+pubDate: 'Jul 01 2025'
 heroImage: '/Coachella.webp'
 
 ---
