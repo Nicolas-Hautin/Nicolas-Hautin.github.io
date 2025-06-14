@@ -1,8 +1,8 @@
 ---
-title: 'Affiche Animée'
-description: 'Animation d’une affiche vectoriel de CUBA en motion design'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog/affiche/coveraffiche.png'
+title: 'Waitrose'
+description: 'Créer une vidéo en stop motion qui sensibilise au gaspillage alimentaire'
+pubDate: 'Jul 22 2025'
+heroImage: '/blog/waitrose/waitrose.png'
 ---
 
 <section class="flex flex-col lg:flex-row my-10 gap-5 justify-center items-center">

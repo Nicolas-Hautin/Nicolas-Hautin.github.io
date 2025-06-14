@@ -1,8 +1,8 @@
 ---
-title: 'Affiche Animée'
-description: 'Animation d’une affiche vectoriel de CUBA en motion design'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog/affiche/coveraffiche.png'
+title: 'Limoges habitat'
+description: 'Création de toute l’identité visuelle d’un concours, avec justification des choix graphiques'
+pubDate: 'Jul 22 2025'
+heroImage: '/blog/limogeshabitat/cover.png'
 ---
 
 <section class="flex flex-col lg:flex-row my-10 gap-5 justify-center items-center">

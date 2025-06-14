@@ -1,6 +1,6 @@
 ---
 title: 'Coachella'
-description: 'Création d’un objet 3D puis réalisation d’une vidéo du site internet de l’objet'
+description: 'Refonte de l’identité du concours et communication sur les réseaux sociaux'
 pubDate: 'Jul 08 2024'
 heroImage: '/Coachella.webp'
 
@@ -36,7 +36,7 @@ Nous avons réalisé des maquettes pour ordinateur et téléphone en utilisant F
 
 <section class="flex flex-col lg:flex-row my-16 gap-5 justify-center items-center">
 <div class="w-full lg:w-1/2 " >
-  <video class="w-full aspect-video" src="/blog/coachella/motion.mp4" controls title="motion design" frameborder="0"></video>
+  <video src="/blog/coachella/motion.mp4" controls title="motion design" frameborder="0"></video>
 </div>
 <div class="w-full lg:w-1/2 " >
 
@@ -55,7 +55,7 @@ En fin de projet, nous avons créé un réel Instagram pour promouvoir le concou
 
 </div>
 <div class="w-full lg:w-1/2 " >
-  <video class="w-full aspect-video" src="/blog/coachella/rendu-reel.mp4" controls title="Réel coachella" frameborder="0"></video>
+  <video src="/blog/coachella/rendu-reel.mp4" controls title="Réel coachella" frameborder="0"></video>
 </div>
 </section>
 

@@ -1,8 +1,8 @@
 ---
-title: 'Affiche Animée'
-description: 'Animation d une affiche à partir d une affiche de CUBA'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog/affiche/coveraffiche.png'
+title: 'CP Company'
+description: 'Création d’un site e-commerce WordPress avec composants personnalisés en Tailwind CSS'
+pubDate: 'Jul 22 2025'
+heroImage: '/blog/cpcompany/cover.png'
 ---
 
 <section class="flex flex-col lg:flex-row my-10 gap-5 justify-center items-center">

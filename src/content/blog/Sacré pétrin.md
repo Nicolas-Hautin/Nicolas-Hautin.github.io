@@ -1,8 +1,8 @@
 ---
-title: 'Affiche Animée'
-description: 'Animation d’une affiche vectoriel de CUBA en motion design'
-pubDate: 'Jul 22 2022'
-heroImage: '/blog/affiche/coveraffiche.png'
+title: 'Sacré pétrin'
+description: 'Création d’un site internet one page avec une nouvelle identité graphique complète'
+pubDate: 'Jul 22 2025'
+heroImage: '/blog/sacrepetrin/logo.png'
 ---
 
 <section class="flex flex-col lg:flex-row my-10 gap-5 justify-center items-center">
