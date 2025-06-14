@@ -16,11 +16,11 @@ Pour débuter le projet, nous avons sélectionné la marque C.P. Company, puis a
 
 <div class=" flex flex-col md:flex-row gap-5 mt-5 mb-10">
 
-![Visuel](/blog/cpcompany/cpcompagy1.png)
+![Visuel](/blog/cpcompany/cpcompany1.png)
 
-![Visuel](/blog/cpcompagy/cpcompagy2.png)
+![Visuel](/blog/cpcompany/cpcompany2.png)
 
-![Visuel](/blog/cpcompagy/cpcompany3.png)
+![Visuel](/blog/cpcompany/cpcompany3.png)
 </div>
 
 
