@@ -1,8 +1,8 @@
 ---
-title: 'Limoges habitat'
-description: 'Création de toute l’identité visuelle d’un concours, avec justification des choix graphiques'
+title: 'Mairie du verdon'
+description: 'Création d’un site internet informatif simple d’utilisation pour une mairie'
 pubDate: 'Jul 22 2025'
-heroImage: '/blog/limogeshabitat/cover.png'
+heroImage: '/blog/leverdon/cover.png'
 ---
 
 <section class="flex flex-col lg:flex-row my-10 gap-5 justify-center items-center">
